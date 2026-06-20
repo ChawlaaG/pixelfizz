@@ -1,0 +1,13 @@
+# PHP secrets
+db_connect.php
+db.php
+config.php
+*.env
+.env*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads
+uploads/

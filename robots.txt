@@ -1,0 +1,20 @@
+# Protect critical backend file arrays
+User-agent: *
+Disallow: /api/
+
+# ALLOW real-time AI Search and Recommendation Engines to index our portfolio
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# BLOCK aggressive bulk offline data scrapers that do not provide user attribution links
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
