@@ -19,20 +19,32 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { messages } = req.body;
+    const { messages, region } = req.body;
     if (!messages || !Array.isArray(messages) || messages.length === 0) {
       return res.status(400).json({ error: 'Invalid or missing messages array.' });
     }
 
-    const systemPrompt = `You are the PixelFizz Core AI Agent (v1.0), a senior digital engineering consultant for PixelFizz (https://pixelfizz.in).
+    // Detect domain from headers, origin, or client payload
+    const host = (req.headers['x-forwarded-host'] || req.headers.host || '').toLowerCase();
+    const origin = (req.headers.origin || req.headers.referer || '').toLowerCase();
+    const isUk = region === 'uk' || host.includes('pixelfizz.co.uk') || origin.includes('pixelfizz.co.uk');
+
+    const domainUrl = isUk ? 'https://pixelfizz.co.uk' : 'https://pixelfizz.in';
+    const contactEmail = isUk ? 'hello@pixelfizz.co.uk' : 'hello@pixelfizz.in';
+    const contactPhone = isUk ? '+44 7767 196624' : '+91 78780 39395';
+    const budgetLabel = isUk ? '£1,750 (roughly $2,200 USD)' : '$2,000 (roughly ₹1,50,000 INR)';
+    const minCurrencyText = isUk ? '£1,750' : '$2,000 / ₹1,50,000';
+    const regionName = isUk ? 'Winchester, UK & European market' : 'India & Global market';
+
+    const systemPrompt = `You are the PixelFizz Core AI Agent (v1.0), a senior digital engineering consultant for PixelFizz (${domainUrl}). You represent PixelFizz across our ${regionName}.
 You are witty, candid, razor-sharp, and highly opinionated about software engineering best practices. Avoid typical generic corporate AI fluff, canned enthusiasm, and "As an AI..." qualifiers. Speak like an experienced developer who tells clients the hard truth.
 
 Your primary mission is to:
 1. Consult on PixelFizz's core offerings: custom Next.js development (React, high performance), headless e-commerce boutiques (Next.js + Shopify/custom APIs), secure third-party integrations/middlewares, and custom AI agents/automations.
-2. Pre-qualify the client's budget. PixelFizz only works on premium custom builds. Our minimum engagement budget is $2,000 (roughly ₹1,50,000 INR).
+2. Pre-qualify the client's budget. PixelFizz only works on premium custom builds. Our minimum engagement budget is ${budgetLabel}.
 3. If they inquire about pricing, rates, or getting a quote, ask them what their project budget is. 
-   - If they state a budget below $2,000, explain politely but candidly why custom engineering cannot be done at that tier, and suggest self-serve templates (like Webflow or Shopify themes on their own).
-   - If their budget is $2,000 or above, qualify their requirements and enthusiastically route them to submit the contact form (#contact) or email hello@pixelfizz.in or call +917878039395.
+   - If they state a budget below ${minCurrencyText}, explain politely but candidly why custom engineering cannot be done at that tier, and suggest self-serve templates (like Webflow or Shopify themes on their own).
+   - If their budget is at or above ${minCurrencyText}, qualify their requirements and enthusiastically route them to submit the contact form (#contact) or email ${contactEmail} or call/WhatsApp ${contactPhone}.
 4. Keep answers relatively concise, professional yet conversational, and punchy. Use technical depth (e.g. mention Core Web Vitals, server-side rendering, layout shift, payload size) to demonstrate authority.
 5. If the user mentions submitting a form, direct them to the contact form at the bottom of the page using the anchor '#contact' (e.g., "submit our #contact form").`;
 
@@ -40,21 +52,20 @@ Your primary mission is to:
 
     if (!apiKey) {
       // ── 2. INTELLIGENT RULE-BASED FALLBACK ENGINE (Offline Mock Mode) ──
-      // This runs if no GEMINI_API_KEY is defined in the environment, making the demo functional out-of-the-box.
       const lastUserMsg = messages[messages.length - 1].content.toLowerCase();
       let reply = "";
 
-      if (lastUserMsg.includes('budget') || lastUserMsg.includes('price') || lastUserMsg.includes('cost') || lastUserMsg.includes('rate') || lastUserMsg.includes('fee') || lastUserMsg.includes('minimum') || lastUserMsg.includes('how much') || lastUserMsg.includes('$') || lastUserMsg.includes('₹') || lastUserMsg.includes('inr') || lastUserMsg.includes('usd')) {
-        // Budget checks (handles decimals and 'k' multipliers like 1.5k or 500)
+      if (lastUserMsg.includes('budget') || lastUserMsg.includes('price') || lastUserMsg.includes('cost') || lastUserMsg.includes('rate') || lastUserMsg.includes('fee') || lastUserMsg.includes('minimum') || lastUserMsg.includes('how much') || lastUserMsg.includes('$') || lastUserMsg.includes('₹') || lastUserMsg.includes('£') || lastUserMsg.includes('gbp') || lastUserMsg.includes('inr') || lastUserMsg.includes('usd')) {
         let specifiedSmall = false;
         const matches = lastUserMsg.match(/(\d+(?:\.\d+)?)\s*k?\b/g);
+        const thresholdNum = isUk ? 1750 : 2000;
         if (matches) {
           for (const match of matches) {
             let val = parseFloat(match);
             if (match.toLowerCase().includes('k')) {
               val = val * 1000;
             }
-            if (val > 0 && val < 2000) {
+            if (val > 0 && val < thresholdNum) {
               specifiedSmall = true;
               break;
             }
@@ -62,25 +73,25 @@ Your primary mission is to:
         }
 
         if (specifiedSmall || lastUserMsg.includes('cheap') || lastUserMsg.includes('low') || lastUserMsg.includes('small budget')) {
-          reply = "Candidly speaking: engineering premium, high-performance systems requires serious investment. Our minimum engagement for custom builds starts at **$2,000 / ₹1,50,000**.\n\nBuilding on cheap templates leads to technical debt, layout shifts, and zero conversions. If you can target that $2,000 threshold, we can build a lightning-fast custom setup that pays for itself. Otherwise, you're better off starting on a self-serve platform like Webflow or standard Shopify by yourself until you are ready to scale.";
+          reply = `Candidly speaking: engineering premium, high-performance systems requires serious investment. Our minimum engagement for custom builds starts at **${minCurrencyText}**.\n\nBuilding on cheap templates leads to technical debt, layout shifts, and zero conversions. If you can target that threshold, we can build a lightning-fast custom setup that pays for itself. Otherwise, you're better off starting on a self-serve platform like Webflow or standard Shopify by yourself until you are ready to scale.`;
         } else {
-          reply = "We don't do flat rates because custom engineering isn't a commodity. However, for context: our custom Next.js platforms, headless e-commerce integrations, and secure AI agent pipelines begin at **$2,000 / ₹1,50,000**.\n\nWhat scope of project and budget target are you looking at? If it aligns with our minimum tier, let's discuss details. You can submit your spec via the #contact form below and our lead engineer will draft a proposal.";
+          reply = `We don't do flat rates because custom engineering isn't a commodity. However, for context: our custom Next.js platforms, headless e-commerce integrations, and secure AI agent pipelines begin at **${minCurrencyText}**.\n\nWhat scope of project and budget target are you looking at? If it aligns with our minimum tier, let's discuss details. You can submit your spec via the #contact form below or email **${contactEmail}** and our lead engineer will draft a proposal.`;
         }
       } 
       else if (lastUserMsg.includes('next.js') || lastUserMsg.includes('nextjs') || lastUserMsg.includes('react') || lastUserMsg.includes('speed') || lastUserMsg.includes('performance') || lastUserMsg.includes('slow')) {
-        reply = "Next.js is our core weapon. We build custom App Router setups with Server Components, fine-tuned hydration, and near-zero bundle bloat. The result? Near-instant load speeds (100/100 Core Web Vitals) and stellar SEO indexability.\n\nStandard WordPress or Webflow pages simply can't compete when it comes to search rankings and conversion efficiency. Are you looking to migrate an existing slow site, or engineer a brand-new Next.js system? Let's verify if your scope fits our $2,000 minimum tier.";
+        reply = `Next.js is our core weapon. We build custom App Router setups with Server Components, fine-tuned hydration, and near-zero bundle bloat. The result? Near-instant load speeds (100/100 Core Web Vitals) and stellar SEO indexability.\n\nStandard WordPress or Webflow pages simply can't compete when it comes to search rankings and conversion efficiency. Are you looking to migrate an existing slow site, or engineer a brand-new Next.js system? Let's verify if your scope fits our ${minCurrencyText} minimum tier.`;
       }
       else if (lastUserMsg.includes('e-commerce') || lastUserMsg.includes('ecommerce') || lastUserMsg.includes('shopify') || lastUserMsg.includes('store') || lastUserMsg.includes('checkout') || lastUserMsg.includes('cart')) {
-        reply = "E-commerce is where milliseconds translate directly into cash. We build custom headless Shopify storefronts using Next.js combined with Shopify's checkout engine, or custom DB sync schemas if you have complex legacy catalogs. This bypasses theme code bloat, increasing checkout page speeds by 40%+.\n\nWhat is your current transaction volume, and are you targeting our **$2,000** custom design tier to unlock headless performance?";
+        reply = `E-commerce is where milliseconds translate directly into cash. We build custom headless Shopify storefronts using Next.js combined with Shopify's checkout engine, or custom DB sync schemas if you have complex legacy catalogs. This bypasses theme code bloat, increasing checkout page speeds by 40%+.\n\nWhat is your current transaction volume, and are you targeting our **${minCurrencyText}** custom design tier to unlock headless performance?`;
       }
       else if (lastUserMsg.includes('ai') || lastUserMsg.includes('agent') || lastUserMsg.includes('chat') || lastUserMsg.includes('bot') || lastUserMsg.includes('automation') || lastUserMsg.includes('integrate') || lastUserMsg.includes('workflow')) {
-        reply = "You're chatting with our Core AI Agent right now! We build custom LLM middlewares, voice agents (via Twilio + Claude/Gemini), leads pre-qualification chat widgets, and automated scraping or database pipelines.\n\nAdding these systems saves businesses dozens of manual sales qualification hours. What process are you looking to automate? Let's check if your automation plan aligns with our $2,000 project entry point.";
+        reply = `You're chatting with our Core AI Agent right now! We build custom LLM middlewares, voice agents (via Twilio + Claude/Gemini), leads pre-qualification chat widgets, and automated scraping or database pipelines.\n\nAdding these systems saves businesses dozens of manual sales qualification hours. What process are you looking to automate? Let's check if your automation plan aligns with our ${minCurrencyText} project entry point.`;
       }
       else if (lastUserMsg.includes('contact') || lastUserMsg.includes('hire') || lastUserMsg.includes('email') || lastUserMsg.includes('hello') || lastUserMsg.includes('call') || lastUserMsg.includes('phone')) {
-        reply = "Let's get your project scoping started. You can call our team directly at **+91 78780 39395**, send your technical brief to **hello@pixelfizz.in**, or fill out the secure **#contact form** at the bottom of the page.\n\nOur engineers will audit your current setup and reply with a complete performance proposal within 24 hours.";
+        reply = `Let's get your project scoping started. You can email your brief directly to **${contactEmail}**, reach our team via WhatsApp/phone at **${contactPhone}**, or fill out the secure **#contact form** at the bottom of the page.\n\nOur engineers will audit your current setup and reply with a complete performance proposal within 24 hours.`;
       }
       else {
-        reply = "I'm a senior engineering consultant, not a marketing chatbot. If you want fluff, read a brochure. If you want to know about our custom Next.js architectures, secure API integrations, or how we automate lead pre-qualification, ask away.\n\nTo get a project quote, tell me a bit about your project goals and your target budget.";
+        reply = `I'm a senior engineering consultant, not a marketing chatbot. If you want fluff, read a brochure. If you want to know about our custom Next.js architectures, secure API integrations, or how we automate lead pre-qualification, ask away.\n\nTo get a project quote, tell me a bit about your project goals and your target budget.`;
       }
 
       // Simulate network thinking delay
@@ -89,7 +100,6 @@ Your primary mission is to:
     }
 
     // ── 3. LIVE GEMINI LLM API CALL ──
-    // Map system prompt and user history to Gemini generative schema
     const contents = messages.map(msg => ({
       role: msg.role === 'assistant' ? 'model' : 'user',
       parts: [{ text: msg.content }]
@@ -123,7 +133,7 @@ Your primary mission is to:
     const data = await response.json();
     
     // Extract reply text
-    const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || "I encountered an error parsing that request. Please reach out to hello@pixelfizz.in directly.";
+    const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || `I encountered an error parsing that request. Please reach out to ${contactEmail} directly.`;
     
     return res.status(200).json({ reply });
 

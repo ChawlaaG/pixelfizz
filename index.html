@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pixel Fizz | Full-Stack Web Development &amp; Custom E-commerce Engineering</title>
-  <meta name="description" content="Pixel Fizz is a premium digital agency engineering high-performance Next.js web applications, custom headless e-commerce boutiques, and secure API integrations to solve speed, scalability, and conversion challenges for modern brands." />
+  <title>PixelFizz | Websites, Online Stores &amp; AI Tools That Win You More Customers</title>
+  <meta name="description" content="PixelFizz builds fast websites, online stores, and AI-powered tools that turn visitors into paying customers. Trusted by 30+ growing brands across India, the UK &amp; beyond — see real results, not just code." />
   <link rel="canonical" href="https://pixelfizz.in" />
+
+  <!-- Multi-Region Dual-Domain SEO Hreflang Tags (India & UK) -->
+  <link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/" />
+  <link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/" />
+  <link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/" />
   
   <!-- Preconnect to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,6 +18,9 @@
   
   <!-- Premium CSS Sheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Unified Dual-Domain Engine -->
+  <script src="domain-config.js"></script>
 
   <!-- Structured Data JSON-LD Schema (ProfessionalService) -->
   <script type="application/ld+json">
@@ -196,7 +204,13 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <a href="#contact" class="nav-cta" id="nav-cta-btn">Let's Talk →</a>
+      <div class="nav-actions">
+        <a href="#contact" class="nav-cta" id="nav-cta-btn">Let's Talk →</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -220,17 +234,18 @@
       </div>
 
       <h1 class="hero-seo-title">
-        Full-Stack Web Development &amp; Custom E-commerce Engineering
+        Websites, Online Stores &amp; AI Tools Engineered to Win You More Customers
       </h1>
 
       <div class="hero-bottom">
         <p class="hero-sub">
-          We engineer custom Next.js web applications, headless e-commerce architectures, secure API middlewares, and real-time AI voice/chat agent orchestrations. We solve speed, scalability, and lead conversion challenges to help growth-focused brands scale in competitive markets.
+          A slow website loses customers. A clunky checkout loses sales. A missed call loses a lead. We fix all three — building fast, beautiful websites, online stores, and AI-powered tools that turn browsers into buyers, day and night. No jargon, no guesswork. Just more business.
         </p>
         <div class="hero-actions">
           <a href="#work" class="btn-lime" id="hero-work-btn">See Our Work ↓</a>
           <a href="#contact" class="btn-ghost" id="hero-contact-btn">Let's Talk →</a>
         </div>
+        <p class="hero-trust">Trusted by 25+ growing brands across India, the UK &amp; beyond</p>
       </div>
 
       <div class="scroll-hint">
@@ -243,42 +258,42 @@
     <div class="marquee-wrap">
       <div class="marquee-row">
         <div class="mtrack">
-          <span class="mitem"><span class="mdot"></span>Next.js Development</span>
-          <span class="mitem"><span class="mdot"></span>E-commerce Engineering</span>
-          <span class="mitem"><span class="mdot"></span>API Integration</span>
-          <span class="mitem"><span class="mdot"></span>Flutter Apps</span>
-          <span class="mitem"><span class="mdot"></span><em>Meta Ads</em></span>
-          <span class="mitem"><span class="mdot"></span>AI Automations</span>
-          <span class="mitem"><span class="mdot"></span>UI / UX Design</span>
-          <span class="mitem"><span class="mdot"></span>Performance Marketing</span>
-          <span class="mitem"><span class="mdot"></span>Next.js Development</span>
-          <span class="mitem"><span class="mdot"></span>E-commerce Engineering</span>
-          <span class="mitem"><span class="mdot"></span>API Integration</span>
-          <span class="mitem"><span class="mdot"></span>Flutter Apps</span>
-          <span class="mitem"><span class="mdot"></span><em>Meta Ads</em></span>
-          <span class="mitem"><span class="mdot"></span>AI Automations</span>
-          <span class="mitem"><span class="mdot"></span>UI / UX Design</span>
-          <span class="mitem"><span class="mdot"></span>Performance Marketing</span>
+          <span class="mitem"><span class="mdot"></span>More Website Visitors</span>
+          <span class="mitem"><span class="mdot"></span>Higher Conversion Rates</span>
+          <span class="mitem"><span class="mdot"></span>Faster Load Times</span>
+          <span class="mitem"><span class="mdot"></span>24/7 AI Support</span>
+          <span class="mitem"><span class="mdot"></span><em>Better Google Rankings</em></span>
+          <span class="mitem"><span class="mdot"></span>More Sales Online</span>
+          <span class="mitem"><span class="mdot"></span>Trusted Brand Design</span>
+          <span class="mitem"><span class="mdot"></span>Automated Lead Capture</span>
+          <span class="mitem"><span class="mdot"></span>More Website Visitors</span>
+          <span class="mitem"><span class="mdot"></span>Higher Conversion Rates</span>
+          <span class="mitem"><span class="mdot"></span>Faster Load Times</span>
+          <span class="mitem"><span class="mdot"></span>24/7 AI Support</span>
+          <span class="mitem"><span class="mdot"></span><em>Better Google Rankings</em></span>
+          <span class="mitem"><span class="mdot"></span>More Sales Online</span>
+          <span class="mitem"><span class="mdot"></span>Trusted Brand Design</span>
+          <span class="mitem"><span class="mdot"></span>Automated Lead Capture</span>
         </div>
       </div>
       <div class="marquee-row">
         <div class="mtrack rev">
-          <span class="mitem"><span class="mdot"></span>React</span>
-          <span class="mitem"><span class="mdot"></span>Shopify headless</span>
-          <span class="mitem"><span class="mdot"></span>Node.js</span>
-          <span class="mitem"><span class="mdot"></span>REST &amp; GraphQL APIs</span>
-          <span class="mitem"><span class="mdot"></span>Figma UI</span>
-          <span class="mitem"><span class="mdot"></span>Stripe Payments</span>
-          <span class="mitem"><span class="mdot"></span>Vercel Edge</span>
-          <span class="mitem"><span class="mdot"></span>Search Engine Optimization</span>
-          <span class="mitem"><span class="mdot"></span>React</span>
-          <span class="mitem"><span class="mdot"></span>Shopify headless</span>
-          <span class="mitem"><span class="mdot"></span>Node.js</span>
-          <span class="mitem"><span class="mdot"></span>REST &amp; GraphQL APIs</span>
-          <span class="mitem"><span class="mdot"></span>Figma UI</span>
-          <span class="mitem"><span class="mdot"></span>Stripe Payments</span>
-          <span class="mitem"><span class="mdot"></span>Vercel Edge</span>
-          <span class="mitem"><span class="mdot"></span>Search Engine Optimization</span>
+          <span class="mitem"><span class="mdot"></span>Fewer Missed Leads</span>
+          <span class="mitem"><span class="mdot"></span>Smoother Checkouts</span>
+          <span class="mitem"><span class="mdot"></span>Real-Time Business Data</span>
+          <span class="mitem"><span class="mdot"></span>Secure Online Payments</span>
+          <span class="mitem"><span class="mdot"></span>Mobile-First Experience</span>
+          <span class="mitem"><span class="mdot"></span>Systems That Just Work</span>
+          <span class="mitem"><span class="mdot"></span>Scalable As You Grow</span>
+          <span class="mitem"><span class="mdot"></span>Search-Ready Content</span>
+          <span class="mitem"><span class="mdot"></span>Fewer Missed Leads</span>
+          <span class="mitem"><span class="mdot"></span>Smoother Checkouts</span>
+          <span class="mitem"><span class="mdot"></span>Real-Time Business Data</span>
+          <span class="mitem"><span class="mdot"></span>Secure Online Payments</span>
+          <span class="mitem"><span class="mdot"></span>Mobile-First Experience</span>
+          <span class="mitem"><span class="mdot"></span>Systems That Just Work</span>
+          <span class="mitem"><span class="mdot"></span>Scalable As You Grow</span>
+          <span class="mitem"><span class="mdot"></span>Search-Ready Content</span>
         </div>
       </div>
     </div>
@@ -288,9 +303,9 @@
       <div class="svc-header reveal">
         <div>
           <span class="section-tag">Our Core Offerings</span>
-          <h2 class="section-title" id="services-title">Engineering solutions built for revenue and scale.</h2>
+          <h2 class="section-title" id="services-title">Everything your brand needs to look great, load fast, and make more money.</h2>
         </div>
-        <p class="svc-sub">We deploy the modern tech stack to build blazing fast systems that eliminate operational bottlenecks and drive growth.</p>
+        <p class="svc-sub">One team, done right. From your first sale to your busiest season, we handle the digital side of your business so you can focus on running it.</p>
       </div>
 
       <div class="svc-grid">
@@ -301,8 +316,8 @@
           <div class="svc-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--lime);"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
           </div>
-          <h3 class="svc-title">Next.js Development</h3>
-          <p class="svc-desc">High-performance React &amp; Next.js applications custom-engineered for search engine indexability, security, and lightning-fast loading speeds.</p>
+          <h3 class="svc-title">High-Speed Websites</h3>
+          <p class="svc-desc">Your homepage should sell, not stall. We build lightning-fast websites that keep visitors engaged, rank higher on Google, and turn more of them into paying customers.</p>
           <div class="svc-arrow" aria-hidden="true">↗</div>
         </a>
 
@@ -313,8 +328,8 @@
           <div class="svc-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--coral);"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
           </div>
-          <h3 class="svc-title">E-commerce Boutiques</h3>
-          <p class="svc-desc">Headless commerce architectures and custom Shopify storefronts. Optimized checkouts, custom cart scripts, and maximum conversion rates.</p>
+          <h3 class="svc-title">Online Stores That Sell</h3>
+          <p class="svc-desc">A beautiful store means nothing if checkout is clunky. We build custom online stores with smooth, frictionless checkouts designed to turn browsers into buyers.</p>
           <div class="svc-arrow" aria-hidden="true">↗</div>
         </a>
 
@@ -325,8 +340,8 @@
           <div class="svc-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--violet);"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
           </div>
-          <h3 class="svc-title">Custom API Integrations</h3>
-          <p class="svc-desc">Robust middleware, CRM/ERP synchronization, custom REST &amp; GraphQL API design, and secure third-party webhook processors.</p>
+          <h3 class="svc-title">Connected Systems</h3>
+          <p class="svc-desc">No more copy-pasting between tools. We connect your website, CRM, inventory, and payments so everything talks to each other automatically.</p>
           <div class="svc-arrow" aria-hidden="true">↗</div>
         </a>
 
@@ -337,8 +352,8 @@
           <div class="svc-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--gold);"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
           </div>
-          <h3 class="svc-title">Performance Marketing</h3>
-          <p class="svc-desc">Data-driven Meta, Google, and LinkedIn ad campaigns. Scroll-stopping graphic designs and targeted lead generation strategies that scale revenue.</p>
+          <h3 class="svc-title">Ads That Pay For Themselves</h3>
+          <p class="svc-desc">We run data-driven campaigns on Meta, Google, and LinkedIn engineered to bring in real leads and sales — not just clicks and likes.</p>
           <div class="svc-arrow" aria-hidden="true">↗</div>
         </a>
 
@@ -349,8 +364,8 @@
           <div class="svc-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--teal);"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
           </div>
-          <h3 class="svc-title">AI Automations &amp; Agents</h3>
-          <p class="svc-desc">Custom AI phone, chat, and voice agents powered by modern LLMs. Handles live support, schedules appointments, and qualifies leads 24/7.</p>
+          <h3 class="svc-title">24/7 AI Assistants</h3>
+          <p class="svc-desc">Never miss another lead. Our AI-powered phone and chat assistants answer questions, book appointments, and qualify customers around the clock — even while you sleep.</p>
           <div class="svc-arrow" aria-hidden="true">↗</div>
         </a>
 
@@ -361,8 +376,8 @@
           <div class="svc-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--indigo);"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
           </div>
-          <h3 class="svc-title">Mobile App Development</h3>
-          <p class="svc-desc">Cross-platform Flutter apps and native iOS &amp; Android systems custom-engineered for offline capability, speed, and clean B2B catalogs.</p>
+          <h3 class="svc-title">Custom Mobile Apps</h3>
+          <p class="svc-desc">Give your customers, and your team, an app built exactly for how you work — fast, reliable, and available on both iPhone and Android.</p>
           <div class="svc-arrow" aria-hidden="true">↗</div>
         </a>
 
@@ -373,8 +388,8 @@
           <div class="svc-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--lime);"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="13" x2="15" y2="13"></line><line x1="9" y1="17" x2="13" y2="17"></line></svg>
           </div>
-          <h3 class="svc-title">Custom SaaS &amp; ERP</h3>
-          <p class="svc-desc">Tailored, secure business management platforms, custom internal ERP/CRM databases, and cloud software to automate enterprise shifts and accounts.</p>
+          <h3 class="svc-title">Business Management Software</h3>
+          <p class="svc-desc">Stop running your business on spreadsheets. We build custom software that tracks your inventory, staff, and accounts — built around how you actually work.</p>
           <div class="svc-arrow" aria-hidden="true">↗</div>
         </a>
 
@@ -385,8 +400,8 @@
           <div class="svc-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--coral);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><polyline points="11 8 11 11 14 11"></polyline></svg>
           </div>
-          <h3 class="svc-title">SEO &amp; GEO Optimization</h3>
-          <p class="svc-desc">Code optimizations and programmatic schemas to rank on local Google search and list your services directly inside next-gen AI search answers.</p>
+          <h3 class="svc-title">Get Found First</h3>
+          <p class="svc-desc">Show up when customers search for you — on Google, and in the new wave of AI search tools like ChatGPT. More visibility means more business, on autopilot.</p>
           <div class="svc-arrow" aria-hidden="true">↗</div>
         </a>
 
@@ -397,8 +412,8 @@
           <div class="svc-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--violet);"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"></path></svg>
           </div>
-          <h3 class="svc-title">Branding &amp; Identity</h3>
-          <p class="svc-desc">Cohesive logo systems, typography rules, color hierarchies, and brand guidelines crafted to establish a trusted and professional presence.</p>
+          <h3 class="svc-title">A Brand People Trust</h3>
+          <p class="svc-desc">First impressions decide deals. We craft a professional identity — logo, colors, and guidelines — that makes your business instantly look credible.</p>
           <div class="svc-arrow" aria-hidden="true">↗</div>
         </a>
 
@@ -409,8 +424,8 @@
           <div class="svc-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--gold);"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
           </div>
-          <h3 class="svc-title">CTO as a Service (vCTO)</h3>
-          <p class="svc-desc">Fractional technical leadership, software audits, infrastructure scaling audits, and expert code review to optimize developer costs and roadmaps.</p>
+          <h3 class="svc-title">Your On-Call Tech Expert</h3>
+          <p class="svc-desc">Making a big tech decision? We act as your outside expert — reviewing your systems and plans so you invest in the right things, not just more code.</p>
           <div class="svc-arrow" aria-hidden="true">↗</div>
         </a>
 
@@ -421,8 +436,8 @@
           <div class="svc-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--teal);"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
           </div>
-          <h3 class="svc-title">Web3, Blockchain &amp; IoT</h3>
-          <p class="svc-desc">Audited Solidity/Rust smart contracts, decentralized client portals (dApps), and MQTT-connected IoT sensor streams for industrial databases.</p>
+          <h3 class="svc-title">Next-Gen Tech Projects</h3>
+          <p class="svc-desc">For brands ready to lead: secure blockchain systems, connected devices, and smart-hardware projects engineered by senior specialists.</p>
           <div class="svc-arrow" aria-hidden="true">↗</div>
         </a>
       </div>
@@ -433,7 +448,7 @@
       <div class="stats-container">
         <div class="stats-grid">
           <div class="stat-item">
-            <div class="stat-num">20+</div>
+            <div class="stat-num">25+</div>
             <div class="stat-label">Projects Completed</div>
           </div>
           <div class="stat-item">
@@ -442,11 +457,11 @@
           </div>
           <div class="stat-item">
             <div class="stat-num">5+</div>
-            <div class="stat-label">Active AI Integrations</div>
+            <div class="stat-label">AI Systems Working 24/7</div>
           </div>
           <div class="stat-item">
             <div class="stat-num">2</div>
-            <div class="stat-label">Global Regions (India &amp; UK)</div>
+            <div class="stat-label">Countries Served (India &amp; UK)</div>
           </div>
         </div>
       </div>
@@ -457,9 +472,9 @@
       <div class="svc-header reveal">
         <div>
           <span class="section-tag">Case Studies</span>
-          <h2 class="section-title" id="work-title">Digital engineering projects we've proudly shipped.</h2>
+          <h2 class="section-title" id="work-title">Real businesses. Real results.</h2>
         </div>
-        <p class="svc-sub">A curated selection of our high-performance solutions deployed for clients across India, USA, and the UK.</p>
+        <p class="svc-sub">See the websites, stores, and tools we've built for brands like yours across India, the USA, and the UK — then imagine what we could build for you.</p>
       </div>
 
       <!-- Glassmorphic Portfolio Filter Buttons -->
@@ -538,12 +553,12 @@
         </a>
 
         <!-- Project 5: Winchester Health Centre -->
-        <a class="work-card wc5 reveal rd1" data-priority="2" href="https://olivedrab-hare-950327.hostingersite.com" target="_blank" rel="noopener noreferrer" id="work-winchester-health" data-category="local">
+        <a class="work-card wc5 reveal rd1" data-priority="2" data-region="uk" href="https://olivedrab-hare-950327.hostingersite.com" target="_blank" rel="noopener noreferrer" id="work-winchester-health" data-category="local">
           <div class="work-bg"></div>
           <div class="work-deco"><div class="work-deco-text">WINCHESTER</div></div>
           <div class="work-overlay">
             <div class="work-tags">
-              <span class="work-tag">UK Pharmacy</span>
+              <span class="work-tag">Winchester, UK</span>
               <span class="work-tag">Clinic Booking</span>
               <span class="work-tag">Healthcare UI</span>
             </div>
@@ -564,7 +579,7 @@
               <span class="work-tag">Payment Gateway</span>
             </div>
             <div class="work-cat">E-Commerce &amp; Retail</div>
-            <div class="work-name">Sajraah Menswear (Shree Mahavir Creation)</div>
+            <div class="work-name">Sajraah Menswear</div>
             <span class="work-tech-badge">Completely custom-built B2C boutique portal with integrated payment gateway, custom inventory control, and secure admin management panel.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -855,7 +870,7 @@
         </a>
 
         <!-- Project 23: VoiceAi Pharmacy Teaser -->
-        <a class="work-card wc1 reveal" data-priority="1" href="#contact" id="work-voiceai-pharmacy" data-category="webapps">
+        <a class="work-card wc1 reveal" data-priority="1" data-region="uk" href="#contact" id="work-voiceai-pharmacy" data-category="webapps">
           <div class="work-bg"></div>
           <div class="work-deco"><div class="work-deco-text">PHARMACY</div></div>
           <div class="work-overlay">
@@ -874,6 +889,216 @@
             <div class="work-teaser-cta">[Case Study: Architecture Breakdown Available Upon Request]</div>
           </div>
         </a>
+
+        <!-- Project 25: Studio Atlas -->
+        <a class="work-card wc17 reveal" data-priority="1" href="https://darkslategrey-lion-216357.hostingersite.com" target="_blank" rel="noopener noreferrer" id="work-studio-atlas" data-category="b2b">
+          <div class="work-bg"></div>
+          <div class="work-deco"><div class="work-deco-text">STUDIO ATLAS</div></div>
+          <div class="work-overlay">
+            <div class="work-tags">
+              <span class="work-tag">Interior Design SaaS</span>
+              <span class="work-tag">GST Invoicing</span>
+              <span class="work-tag">React + PHP API</span>
+            </div>
+            <div class="work-cat">B2B &amp; Corporate</div>
+            <div class="work-name">Studio Atlas</div>
+            <span class="work-tech-badge">A multi-client business platform for interior design studios — clients, projects, procurement, and GST-compliant invoicing in one place, replacing scattered spreadsheets.</span>
+            <div class="work-arrow" aria-hidden="true">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 26: PharmaPriceIQ -->
+        <a class="work-card wc16 reveal rd1" data-priority="1" data-region="uk" href="#contact" id="work-pharmapriceiq" data-category="b2b">
+          <div class="work-bg"></div>
+          <div class="work-deco"><div class="work-deco-text">PHARMAPRICEIQ</div></div>
+          <div class="work-overlay">
+            <div class="work-tags">
+              <span class="work-tag">UK SaaS</span>
+              <span class="work-tag">Stripe Billing</span>
+              <span class="work-tag">Live Price Tracking</span>
+            </div>
+            <div class="work-cat">B2B &amp; Corporate</div>
+            <div class="work-name">PharmaPriceIQ</div>
+            <span class="work-tech-badge">A UK subscription platform that helps independent pharmacies compare supplier prices in real time and stop overpaying on stock — built with Stripe billing and a 14-day free trial baked in.</span>
+            <div class="work-arrow" aria-hidden="true">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 27: mySetu -->
+        <a class="work-card wc19 reveal" data-priority="1" href="#contact" id="work-mysetu" data-category="b2b">
+          <div class="work-bg"></div>
+          <div class="work-deco"><div class="work-deco-text">MYSETU</div></div>
+          <div class="work-overlay">
+            <div class="work-tags">
+              <span class="work-tag">Enterprise SaaS</span>
+              <span class="work-tag">Risk &amp; Compliance</span>
+              <span class="work-tag">Corporate Platform</span>
+            </div>
+            <div class="work-cat">B2B &amp; Corporate</div>
+            <div class="work-name">mySetu</div>
+            <span class="work-tech-badge">An enterprise-grade EHS&amp;S (Environment, Health, Safety &amp; Sustainability) and risk management platform, built to help large organizations track compliance and reduce workplace risk at scale.</span>
+            <div class="work-arrow" aria-hidden="true">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 28: Shri L.G. Haria Multipurpose School -->
+        <a class="work-card wc18 reveal rd1" data-priority="2" href="#contact" id="work-lghs" data-category="local">
+          <div class="work-bg"></div>
+          <div class="work-deco"><div class="work-deco-text">LGHS</div></div>
+          <div class="work-overlay">
+            <div class="work-tags">
+              <span class="work-tag">School Website</span>
+              <span class="work-tag">Admissions Funnel</span>
+              <span class="work-tag">Vapi, Gujarat</span>
+            </div>
+            <div class="work-cat">Local Services &amp; Medical</div>
+            <div class="work-name">Shri L.G. Haria Multipurpose School</div>
+            <div class="work-arrow" aria-hidden="true">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 29: Pogo.Market -->
+        <a class="work-card wc20 reveal" data-priority="1" href="#contact" id="work-pogo-market" data-category="ecommerce">
+          <div class="work-bg"></div>
+          <div class="work-deco"><div class="work-deco-text">POGO.MARKET</div></div>
+          <div class="work-overlay">
+            <div class="work-tags">
+              <span class="work-tag">Gaming Marketplace</span>
+              <span class="work-tag">Secure Checkout</span>
+              <span class="work-tag">Admin + Blog CMS</span>
+            </div>
+            <div class="work-cat">E-Commerce &amp; Retail</div>
+            <div class="work-name">Pogo.Market</div>
+            <span class="work-tech-badge">A full storefront for game-currency top-ups — fast checkout, order tracking, an admin dashboard, and a built-in blog for SEO, delivered as one complete package.</span>
+            <div class="work-arrow" aria-hidden="true">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 30: DM Claims (Independent Loss Assessors) -->
+        <a class="work-card wc21 reveal" data-priority="1" data-region="uk" href="#contact" id="work-dm-claims" data-category="b2b">
+          <div class="work-bg"></div>
+          <div class="work-deco"><div class="work-deco-text">DM CLAIMS</div></div>
+          <div class="work-overlay">
+            <div class="work-tags">
+              <span class="work-tag">Galway &amp; UK/IE</span>
+              <span class="work-tag">Loss Assessors</span>
+              <span class="work-tag">Damage Selector</span>
+              <span class="work-tag">TanStack React</span>
+            </div>
+            <div class="work-cat">B2B &amp; Corporate</div>
+            <div class="work-name">DM Claims (Loss Assessors)</div>
+            <span class="work-tech-badge">Independent loss assessors managing property damage insurance claims across Ireland and the UK — featuring interactive 1-click damage selection and instant emergency response callback dispatch.</span>
+            <div class="work-arrow" aria-hidden="true">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 31: Rosetta Diamond Jewellery -->
+        <a class="work-card wc22 reveal rd1" data-priority="1" href="#contact" id="work-rosetta" data-category="ecommerce">
+          <div class="work-bg"></div>
+          <div class="work-deco"><div class="work-deco-text">ROSETTA</div></div>
+          <div class="work-overlay">
+            <div class="work-tags">
+              <span class="work-tag">Fine Jewellery</span>
+              <span class="work-tag">Video Hero</span>
+              <span class="work-tag">Bento Mosaic</span>
+              <span class="work-tag">Custom PHP/SQL</span>
+            </div>
+            <div class="work-cat">E-Commerce &amp; Retail</div>
+            <div class="work-name">Rosetta Diamond Jewellery</div>
+            <span class="work-tech-badge">Certified natural solitaires &amp; 22K gold luxury boutique — streaming video hero, custom category bento grid, real-time reviews engine, and secure checkout.</span>
+            <div class="work-arrow" aria-hidden="true">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 32: Magnitu Digital Performance Agency -->
+        <a class="work-card wc23 reveal" data-priority="1" data-region="uk" href="#contact" id="work-magnitu" data-category="b2b">
+          <div class="work-bg"></div>
+          <div class="work-deco"><div class="work-deco-text">MAGNITU</div></div>
+          <div class="work-overlay">
+            <div class="work-tags">
+              <span class="work-tag">Galway, Ireland</span>
+              <span class="work-tag">Editorial UI</span>
+              <span class="work-tag">PPC Lead Gen</span>
+              <span class="work-tag">Growth Systems</span>
+            </div>
+            <div class="work-cat">B2B &amp; Corporate</div>
+            <div class="work-name">Magnitu Digital</div>
+            <span class="work-tech-badge">Business All-Star accredited European digital performance partner — built with razor-sharp editorial architectural modernism, commercial revenue funnels, and data-driven PPC.</span>
+            <div class="work-arrow" aria-hidden="true">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 33: Tutorly Coaching Suite -->
+        <a class="work-card wc24 reveal rd1" data-priority="1" href="#contact" id="work-tutorly" data-category="webapps">
+          <div class="work-bg"></div>
+          <div class="work-deco"><div class="work-deco-text">TUTORLY</div></div>
+          <div class="work-overlay">
+            <div class="work-tags">
+              <span class="work-tag">Flutter Multi-Platform</span>
+              <span class="work-tag">Firebase DB</span>
+              <span class="work-tag">3 Role Portals</span>
+              <span class="work-tag">Riverpod</span>
+            </div>
+            <div class="work-cat">Web Apps &amp; AI Systems</div>
+            <div class="work-name">Tutorly Coaching Suite</div>
+            <span class="work-tech-badge">Cross-platform tuition and institute management system featuring dedicated interfaces for Parents, Teachers, and Super Admins, real-time fee tracking, and automated PDF reporting.</span>
+            <div class="work-arrow" aria-hidden="true">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 34: Guldaar Valley Hospitality Suite -->
+        <a class="work-card wc25 reveal" data-priority="2" href="#contact" id="work-guldaar" data-category="webapps">
+          <div class="work-bg"></div>
+          <div class="work-deco"><div class="work-deco-text">GULDAAR</div></div>
+          <div class="work-overlay">
+            <div class="work-tags">
+              <span class="work-tag">Hospitality ERP</span>
+              <span class="work-tag">Homestay PMS</span>
+              <span class="work-tag">Touch Cafe POS</span>
+              <span class="work-tag">Kitchen KDS</span>
+            </div>
+            <div class="work-cat">Web Apps &amp; AI Systems</div>
+            <div class="work-name">Guldaar Valley Hospitality</div>
+            <span class="work-tech-badge">All-in-one hospitality management suite combining guest room booking, touch-optimized cafe point-of-sale, live kitchen display routing (KDS), and inventory audits.</span>
+            <div class="work-arrow" aria-hidden="true">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 35: EditFlow Collaborative Workspace -->
+        <a class="work-card wc26 reveal rd1" data-priority="1" href="#contact" id="work-editflow" data-category="webapps">
+          <div class="work-bg"></div>
+          <div class="work-deco"><div class="work-deco-text">EDITFLOW</div></div>
+          <div class="work-overlay">
+            <div class="work-tags">
+              <span class="work-tag">Next.js 15 App Router</span>
+              <span class="work-tag">Supabase Auth &amp; RLS</span>
+              <span class="work-tag">Tiptap Rich Text</span>
+              <span class="work-tag">TypeScript</span>
+            </div>
+            <div class="work-cat">Web Apps &amp; AI Systems</div>
+            <div class="work-name">EditFlow Workspace</div>
+            <span class="work-tech-badge">Production AI-native collaborative rich-text editor with client-side autosave debounce, team permission sharing, file ingestion, and PostgreSQL Row-Level Security.</span>
+            <div class="work-arrow" aria-hidden="true">↗</div>
+          </div>
+        </a>
+
+        <!-- Project 36: Connaught Property Services -->
+        <a class="work-card wc27 reveal rd2" data-priority="2" data-region="uk" href="#contact" id="work-connaught" data-category="local">
+          <div class="work-bg"></div>
+          <div class="work-deco"><div class="work-deco-text">CONNAUGHT</div></div>
+          <div class="work-overlay">
+            <div class="work-tags">
+              <span class="work-tag">Trade Contractor</span>
+              <span class="work-tag">Service Estimator</span>
+              <span class="work-tag">Connacht IE/UK</span>
+              <span class="work-tag">SEO Schema</span>
+            </div>
+            <div class="work-cat">Local Services &amp; Medical</div>
+            <div class="work-name">Connaught Property Services</div>
+            <span class="work-tech-badge">Multi-trade contractor platform across Connacht featuring automated exterior cleaning, painting, and tree surgery quotation funnels with verified Google review feeds.</span>
+            <div class="work-arrow" aria-hidden="true">↗</div>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -887,28 +1112,28 @@
       <div class="process-container">
         <div class="reveal">
           <span class="section-tag">How We Ship Success</span>
-          <h2 class="section-title" id="process-title">Fast, secure, and focused on target client outcomes.</h2>
+          <h2 class="section-title" id="process-title">No jargon, no delays — just steady progress toward more customers.</h2>
         </div>
         <div class="process-steps">
           <div class="pstep reveal">
             <div class="pstep-num">STEP · 01</div>
-            <h3 class="pstep-title">Technical Discovery</h3>
-            <p class="pstep-desc">We analyze your database schemas, existing integrations, API dependencies, and layout speed blocks. No templates, no sales presentations.</p>
+            <h3 class="pstep-title">Understand Your Business</h3>
+            <p class="pstep-desc">We start by learning your business, your customers, and where you're losing time or money today — not by pitching a generic package.</p>
           </div>
           <div class="pstep reveal rd1">
             <div class="pstep-num">STEP · 02</div>
-            <h3 class="pstep-title">Framer/Figma Prototyping</h3>
-            <p class="pstep-desc">We sketch high-fidelity concept architectures, optimize conversion funnels, and test designs before committing a single line of code.</p>
+            <h3 class="pstep-title">Design &amp; Preview</h3>
+            <p class="pstep-desc">You see and approve exactly how everything will look and work before we write a single line of code. No surprises at launch.</p>
           </div>
           <div class="pstep reveal rd2">
             <div class="pstep-num">STEP · 03</div>
-            <h3 class="pstep-title">Agile Build &amp; Deploy</h3>
-            <p class="pstep-desc">We construct lightweight modules in staging, share progress reports daily, and deploy code iteratively on secure, redundant server networks.</p>
+            <h3 class="pstep-title">We Build It</h3>
+            <p class="pstep-desc">Our team builds your project in stages and shares progress along the way, so you're never left wondering what's happening.</p>
           </div>
           <div class="pstep reveal rd3">
             <div class="pstep-num">STEP · 04</div>
-            <h3 class="pstep-title">Optimization &amp; Handover</h3>
-            <p class="pstep-desc">We run Core Web Vitals checks, implement schema markup, audit security, and deliver detailed documentation with full root-level control keys.</p>
+            <h3 class="pstep-title">Launch &amp; Support</h3>
+            <p class="pstep-desc">We test everything, make sure it's fast and secure, and hand you the keys — with clear documentation and ongoing support after launch.</p>
           </div>
         </div>
       </div>
@@ -918,6 +1143,13 @@
     <section class="clients reveal" aria-label="Clients and Brands">
       <h2 class="section-title" style="text-align:center; max-width: 100%; margin-bottom: 40px;">Brands We've Empowered</h2>
       <div class="clients-inner">
+        <span class="client-pill">DM Claims</span>
+        <span class="client-pill">Rosetta Jewellery</span>
+        <span class="client-pill">Magnitu Digital</span>
+        <span class="client-pill">Tutorly</span>
+        <span class="client-pill">Guldaar Valley</span>
+        <span class="client-pill">EditFlow</span>
+        <span class="client-pill">Connaught Services</span>
         <span class="client-pill">Talentis HR</span>
         <span class="client-pill">MedBridge Global</span>
         <span class="client-pill">Kagrecha Realty</span>
@@ -934,6 +1166,10 @@
         <span class="client-pill">True Realty Value</span>
         <span class="client-pill">Quillden</span>
         <span class="client-pill">BMFlix</span>
+        <span class="client-pill">Studio Atlas</span>
+        <span class="client-pill">mySetu</span>
+        <span class="client-pill">PharmaPriceIQ</span>
+        <span class="client-pill">LGHS Vapi</span>
       </div>
     </section>
 
@@ -949,9 +1185,9 @@
             your brand<br>
             <span class="glow-word">FIZZ.</span>
           </h2>
-          <p class="cta-sub">Submit your project details. Our engineers will reply with a scope design and custom performance audit within 24 hours.</p>
+          <p class="cta-sub">Tell us about your business and what's holding it back. We'll reply within 24 hours with clear next steps — no obligation, no jargon.</p>
           <div class="cta-actions">
-            <a href="mailto:hello@pixelfizz.in" class="btn-lime-lg" id="cta-email-btn">Start a Project →</a>
+            <a href="mailto:hello@pixelfizz.in" data-domain-target="email-link" class="btn-lime-lg" id="cta-email-btn">Start a Project →</a>
             <a href="tel:+917878039395" class="btn-ghost-lg" id="cta-phone-btn">Call Our Team</a>
           </div>
         </div>
@@ -966,22 +1202,22 @@
       <div class="foot-top">
         <div>
           <div class="foot-logo">Pixel<em>Fizz</em></div>
-          <p class="foot-tagline">Premium full-stack engineering agency building high-performance web systems and digital campaigns that drive conversions.</p>
+          <p class="foot-tagline">We build websites, online stores, and AI-powered tools that help brands sell more and grow faster.</p>
         </div>
         <div>
           <div class="foot-col-title">Services</div>
           <ul class="foot-links">
-            <li><a href="services/nextjs-development/index.html">Next.js Web Apps</a></li>
-            <li><a href="services/ecommerce-boutiques/index.html">E-commerce Stores</a></li>
-            <li><a href="services/custom-api-integrations/index.html">Custom API &amp; Integrations</a></li>
-            <li><a href="services/ai-automations-agents/index.html">AI Chatbots &amp; Agents</a></li>
-            <li><a href="services/performance-marketing/index.html">Performance Marketing</a></li>
-            <li><a href="services/mobile-apps/index.html">Mobile App Development</a></li>
-            <li><a href="services/saas-erp-systems/index.html">Custom SaaS &amp; ERP</a></li>
-            <li><a href="services/seo-geo-optimization/index.html">SEO &amp; GEO Optimization</a></li>
-            <li><a href="services/branding-corporate-identity/index.html">Branding &amp; Identity</a></li>
-            <li><a href="services/cto-as-a-service/index.html">CTO as a Service (vCTO)</a></li>
-            <li><a href="services/web3-blockchain-iot/index.html">Web3, Blockchain &amp; IoT</a></li>
+            <li><a href="services/nextjs-development/index.html">High-Speed Websites</a></li>
+            <li><a href="services/ecommerce-boutiques/index.html">Online Stores That Sell</a></li>
+            <li><a href="services/custom-api-integrations/index.html">Connected Systems</a></li>
+            <li><a href="services/ai-automations-agents/index.html">24/7 AI Assistants</a></li>
+            <li><a href="services/performance-marketing/index.html">Ads That Pay For Themselves</a></li>
+            <li><a href="services/mobile-apps/index.html">Custom Mobile Apps</a></li>
+            <li><a href="services/saas-erp-systems/index.html">Business Management Software</a></li>
+            <li><a href="services/seo-geo-optimization/index.html">Get Found First</a></li>
+            <li><a href="services/branding-corporate-identity/index.html">A Brand People Trust</a></li>
+            <li><a href="services/cto-as-a-service/index.html">Your On-Call Tech Expert</a></li>
+            <li><a href="services/web3-blockchain-iot/index.html">Next-Gen Tech Projects</a></li>
           </ul>
         </div>
         <div>

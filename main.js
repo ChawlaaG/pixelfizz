@@ -51,8 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ── 2. STICKY NAV ON SCROLL ── */
+  /* ── 2. STICKY NAV ON SCROLL & MOBILE MENU TOGGLE ── */
   const header = document.getElementById('navbar');
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.querySelector('.nav-links');
+
   if (header) {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -63,8 +66,32 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     
     window.addEventListener('scroll', handleScroll, { passive: true });
-    // Run once on load to catch initial state
     handleScroll();
+  }
+
+  if (navToggle && header) {
+    navToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = header.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    if (navLinks) {
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          header.classList.remove('nav-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (header.classList.contains('nav-open') && !header.contains(e.target)) {
+        header.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
   }
 
   /* ── 3. SCROLL REVEAL (INTERSECTION OBSERVER) ── */
@@ -137,16 +164,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ── 6. PRIORITY-BASED PROJECT SHUFFLING ── */
+  /* ── 6. PRIORITY-BASED PROJECT SHUFFLING (DOMAIN-AWARE) ── */
   const grid = document.querySelector('.work-grid');
   if (grid) {
+    const isUkDomain = document.documentElement.getAttribute('data-domain') === 'uk';
     const cards = Array.from(grid.querySelectorAll('.work-card'));
     
     // Group cards by priority (default to 3 if not specified)
     const groups = {};
     cards.forEach(card => {
       const rawPriority = card.getAttribute('data-priority');
-      const priority = (rawPriority !== null && !isNaN(rawPriority)) ? parseInt(rawPriority, 10) : 3;
+      let priority = (rawPriority !== null && !isNaN(rawPriority)) ? parseInt(rawPriority, 10) : 3;
+      
+      // If browsing UK domain, boost cards marked with data-region="uk" or data-region="europe"
+      const cardRegion = card.getAttribute('data-region');
+      if (isUkDomain && (cardRegion === 'uk' || cardRegion === 'europe')) {
+        priority = Math.max(0, priority - 2); // Boost to top tier 0 or 1
+      }
+
       if (!groups[priority]) groups[priority] = [];
       groups[priority].push(card);
     });
@@ -160,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return array;
     }
     
-    // Sort priority keys (1, 2, 3...) and shuffle within each priority tier
+    // Sort priority keys (0, 1, 2, 3...) and shuffle within each priority tier
     const sortedPriorities = Object.keys(groups).map(Number).sort((a, b) => a - b);
     const finalOrderedCards = [];
     
@@ -354,9 +389,14 @@ document.addEventListener('DOMContentLoaded', () => {
       initialGreetingSent = true;
       showTypingIndicator();
       
+      const isUk = document.documentElement.getAttribute('data-domain') === 'uk';
+      const greeting = isUk
+        ? "Hey! I'm PixelFizz's UK & Global AI Consultant. I specialize in custom Next.js architectures, headless e-commerce engineering, and automated workflow pipelines for brands across the UK, Europe, and globally.\n\nAre you looking to build a high-performance web system, custom web app, or integrate some AI agents? What project parameters are we working with today?"
+        : "Hey! I'm PixelFizz's Core AI Consultant. I specialize in custom Next.js architectures, headless e-commerce engineering, and workflow automation pipelines.\n\nAre you looking to build a high-performance web system, custom web app, or integrate some AI agents? What project parameters are we working with today?";
+
       setTimeout(() => {
         removeTypingIndicator();
-        appendMessage('agent', "Hey! I'm PixelFizz's Core AI Consultant. I specialize in custom Next.js architectures, headless e-commerce engineering, and workflow automation pipelines.\n\nAre you looking to build a high-performance web system, custom web app, or integrate some AI agents? What project parameters are we working with today?");
+        appendMessage('agent', greeting);
       }, 1000);
     }
     
@@ -377,13 +417,16 @@ document.addEventListener('DOMContentLoaded', () => {
       showTypingIndicator();
       
       try {
+        const activeRegion = document.documentElement.getAttribute('data-domain') || 'in';
+        const fallbackEmail = activeRegion === 'uk' ? 'hello@pixelfizz.co.uk' : 'hello@pixelfizz.in';
+
         // 3. Make post request to backend route
         const response = await fetch(apiEndpoint, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify({ messages: chatHistory })
+          body: JSON.stringify({ messages: chatHistory, region: activeRegion })
         });
         
         removeTypingIndicator();
@@ -393,7 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         const data = await response.json();
-        const reply = data.reply || "I encountered an error analyzing that query. Let's redirect this to hello@pixelfizz.in.";
+        const reply = data.reply || `I encountered an error analyzing that query. Let's redirect this to ${fallbackEmail}.`;
         
         // 4. Add agent reply
         appendMessage('agent', reply);
@@ -401,7 +444,9 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (err) {
         console.error('Chat error:', err);
         removeTypingIndicator();
-        appendMessage('agent', "Looks like my secure connection is experiencing turbulence. If you're ready to design your next tech setup, drop us a direct message at hello@pixelfizz.in or scroll down to our contact form!");
+        const activeRegion = document.documentElement.getAttribute('data-domain') || 'in';
+        const fallbackEmail = activeRegion === 'uk' ? 'hello@pixelfizz.co.uk' : 'hello@pixelfizz.in';
+        appendMessage('agent', `Looks like my secure connection is experiencing turbulence. If you're ready to design your next tech setup, drop us a direct message at ${fallbackEmail} or scroll down to our contact form!`);
       }
     });
   }
