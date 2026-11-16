@@ -5,9 +5,15 @@ config.php
 *.env
 .env*
 
+# Builds & Distribution
+dist/
+storage/
+*.log
+
 # OS
 .DS_Store
 Thumbs.db
 
 # Uploads
 uploads/
+

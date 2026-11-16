@@ -3,56 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Performance Marketing & PPC Campaigns | Pixel Fizz Service</title>
-  <meta name="description" content="Data-driven Meta, Google, and LinkedIn ad campaigns. We build conversion-optimized landing pages and high-ROI lead funnels for brands in Vapi, Gujarat, Daman, and Winchester, UK." />
+  <title>Performance Marketing & PPC Campaigns | PixelFizz</title>
+  <meta name="description" content="Data-driven Meta, Google, and LinkedIn ad campaigns combined with high-converting landing pages engineered to maximize commercial ROI." />
   <link rel="canonical" href="https://pixelfizz.in/services/performance-marketing/" />
   
-  <!-- Multi-Region Dual-Domain SEO Hreflang Tags (India & UK) -->
+  <!-- Multi-Region Dual-Domain SEO Hreflang Tags -->
   <link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/performance-marketing/" />
   <link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/performance-marketing/" />
   <link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/performance-marketing/" />
 
-  <!-- Preconnect to Google Fonts -->
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PixelFizz" />
+  <meta property="og:url" content="https://pixelfizz.in/services/performance-marketing/" />
+  <meta property="og:title" content="Performance Marketing & PPC Campaigns | PixelFizz" />
+  <meta property="og:description" content="Data-driven Meta, Google, and LinkedIn ad campaigns combined with high-converting landing pages engineered to maximize commercial ROI." />
+  <meta property="og:image" content="https://pixelfizz.in/assets/og-default.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://pixelfizz.in/services/performance-marketing/" />
+  <meta name="twitter:title" content="Performance Marketing & PPC Campaigns | PixelFizz" />
+  <meta name="twitter:description" content="Data-driven Meta, Google, and LinkedIn ad campaigns combined with high-converting landing pages engineered to maximize commercial ROI." />
+  <meta name="twitter:image" content="https://pixelfizz.in/assets/og-default.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" />
+
+  <!-- Preconnect & Asynchronous Google Fonts Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" />
+  </noscript>
   
-  <!-- Premium CSS Sheet (Relative to subfolder) -->
+  <!-- Premium Unified CSS -->
   <link rel="stylesheet" href="../../style.css" />
 
-  <!-- Unified Dual-Domain Engine -->
-  <script src="../../domain-config.js"></script>
-
-  <!-- Structured Data JSON-LD Schema (ProfessionalService) -->
+  <!-- Structured Data JSON-LD Schema (Service + BreadcrumbList + FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "@id": "https://pixelfizz.in/#organization",
-    "name": "Pixel Fizz",
-    "url": "https://pixelfizz.in",
-    "logo": "https://pixelfizz.in/assets/logo.png",
-    "image": "https://pixelfizz.in/assets/hero.jpg",
-    "description": "Premium full-stack web development agency specializing in Next.js development, custom e-commerce engineering, and API integrations.",
-    "telephone": "+917878039395",
-    "priceRange": "$$$",
-    "address": [
+    "@graph": [
       {
-        "@type": "PostalAddress",
-        "addressLocality": "Vapi",
-        "addressRegion": "Gujarat",
-        "addressCountry": "IN"
+        "@type": "Service",
+        "@id": "https://pixelfizz.in/services/performance-marketing/#service",
+        "name": "Performance Marketing & PPC Campaigns",
+        "description": "Data-driven Meta, Google, and LinkedIn ad campaigns combined with high-converting landing pages engineered to maximize commercial ROI.",
+        "provider": {
+          "@type": "Organization",
+          "name": "PixelFizz",
+          "url": "https://pixelfizz.in",
+          "logo": "https://pixelfizz.in/assets/logo.png"
+        },
+        "areaServed": ["IN", "GB"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Performance Marketing & PPC Campaigns",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Performance Marketing & PPC Campaigns"
+              }
+            }
+          ]
+        }
       },
       {
-        "@type": "PostalAddress",
-        "addressLocality": "Winchester",
-        "addressRegion": "Hampshire",
-        "addressCountry": "GB"
+        "@type": "BreadcrumbList",
+        "@id": "https://pixelfizz.in/services/performance-marketing/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://pixelfizz.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://pixelfizz.in/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Performance Marketing & PPC Campaigns",
+            "item": "https://pixelfizz.in/services/performance-marketing/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://pixelfizz.in/services/performance-marketing/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why combine ad management with custom engineering?",
+            "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Media buying alone fails if your landing page loads in 4 seconds and has friction. We engineer ultra-fast landing pages alongside your ad campaigns, drastically lowering cost-per-acquisition (CPA)."
+            }
+},
+          {
+            "@type": "Question",
+            "name": "Which ad platforms do you manage?",
+            "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We manage Google Search, Google Performance Max, Meta (Instagram & Facebook), and LinkedIn B2B lead generation funnels."
+            }
+},
+          {
+            "@type": "Question",
+            "name": "What is your minimum ad spend requirement?",
+            "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We typically work with brands investing \u20b950,000+ ($600+) monthly in ad spend to ensure statistically meaningful data for algorithmic optimization."
+            }
+},
+          {
+            "@type": "Question",
+            "name": "How do you track conversions accurately?",
+            "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We implement server-side Conversion API (CAPI) for Meta and Enhanced Conversions for Google Ads to bypass browser ad-blockers and iOS privacy restrictions."
+            }
+}
+        ]
       }
-    ],
-    "sameAs": [
-      "https://instagram.com/ChawlaaG",
-      "https://www.linkedin.com/in/chawlaag/",
-      "https://twitter.com/ChalwaaG"
     ]
   }
   </script>
@@ -76,7 +157,7 @@
         </ul>
       </nav>
       <div class="nav-actions">
-        <a href="../../index.html#contact" class="nav-cta" id="nav-cta-btn">Let's Talk →</a>
+        <a href="../../index.html#contact" class="nav-cta" id="nav-cta-btn">Start a Project →</a>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -89,65 +170,195 @@
   <main>
     <section class="service-detail">
       <div class="svc-detail-header reveal">
-        <span class="section-tag">Revenue Systems</span>
-        <h1 class="svc-detail-title">Performance Marketing &amp; PPC</h1>
-        <p class="svc-detail-hero-desc">
-          We engineer high-ROI paid media structures across Meta (Facebook/Instagram), Google, and LinkedIn, linking ads to optimized landing pages to maximize conversion volumes.
-        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumbs-sep">/</span>
+          <a href="../../index.html#services">Services</a>
+          <span class="breadcrumbs-sep">/</span>
+          <span class="breadcrumbs-current">performance-marketing</span>
+        </nav>
+
+        <span class="section-tag">Engineering Service</span>
+        <h1 class="svc-detail-title">Performance Marketing & PPC Campaigns</h1>
+        <p class="svc-detail-hero-desc">Data-driven Meta, Google, and LinkedIn ad campaigns combined with high-converting landing pages engineered to maximize commercial ROI.</p>
       </div>
 
       <div class="svc-detail-body reveal rd1">
         <div class="svc-content">
           <h2>What Problems We Solve for Clients</h2>
           <p>
-            Are you wasting capital on visual ad boosts that look pretty but drive zero actual sales or qualified calls? Many agencies run general campaigns without installing proper attribution pixels or conversion logic, leaving you blind to your customer acquisition costs (CAC).
+            Slow websites, fragmented third-party software, and high customer drop-off rates directly erode commercial revenue. Most businesses struggle with bloated CMS themes that look fine on desktop but drag down mobile speed scores and leave search engines unable to index content efficiently.
           </p>
           <p>
-            At Pixel Fizz, we build full-funnel lead generation networks that map every rupee or pound spent to actual business results. Helping enterprises in Vapi, Gujarat, Daman, and Winchester, UK scale, we write high-impact copy, model custom audience demographics, and implement complete Conversions API tracking pipelines to guarantee precise reporting.
+            PixelFizz eliminates these bottlenecks by engineering production architectures with zero-bloat code, sub-second response times, and hardened security. We align modern engineering with clear commercial metrics: higher checkout conversions, lower cost per lead, and complete system reliability.
           </p>
 
-          <h2>Our Technical Capabilities</h2>
+          <h2>Our Technical Capabilities & Standards</h2>
           <ul>
-            <li><strong>Conversions API Setup (Server-side):</strong> Setting up server-side data integrations with Meta and Google to capture 100% of purchase and lead events, bypassing browser ad-blockers.</li>
-            <li><strong>High-Converting Landing Pages:</strong> Engineering custom Next.js/HTML landing pages optimized to load in under a second, lowering bounce rates and driving higher ad quality scores.</li>
-            <li><strong>Data-Driven B2B Campaigns:</strong> Running professional lead gen structures on LinkedIn and Google Search to match high-intent corporate inquiries for manufacturing and infrastructure entities.</li>
-            <li><strong>Creative Iteration Engine:</strong> Designing, drafting, and testing dynamic ad creatives in fast cycles to identify the lowest cost-per-acquisition assets.</li>
+            <li><strong>Zero-Bloat Full-Stack Architecture:</strong> Engineered with modern frameworks to minimize client-side bundle sizes and achieve 95+ Core Web Vitals.</li>
+            <li><strong>Automated Lead & Transaction Pipelines:</strong> Seamless integrations with payment gateways, WhatsApp business endpoints, and CRM systems.</li>
+            <li><strong>Search Engine & GEO Optimization:</strong> Automated JSON-LD schema, clean semantic hierarchy, and programmatic sitemaps for Google and generative AI engines.</li>
+            <li><strong>High-Availability Edge Deployment:</strong> Configured for high traffic surges with robust caching headers, GZIP/Brotli compression, and security shielding.</li>
           </ul>
 
-          <h2>Typical Project Scope</h2>
-          <p>
-            We audit your current ad accounts, verify tag management, design custom campaign architectures, create the design/copy assets, configure tracking pixels, launch campaigns in micro-budgets to validate performance, and scale the top-converting funnels.
-          </p>
+          <!-- Related Case Studies Showcase -->
+          <h2 style="margin-top:36px;">Featured Case Studies in This Category</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:16px;margin:20px 0 32px;">
+            
+          <div style="background:hsla(240,10%,7%,0.8);border:1px solid var(--glass-border);border-radius:14px;padding:20px;">
+            <div style="font-family:var(--font-display);font-size:16px;font-weight:700;color:#ffffff;margin-bottom:6px;">
+              <a href="../../work/dm-claims-ireland/index.html" style="color:#ffffff;text-decoration:none;">DM Claims Client Funnel →</a>
+            </div>
+            <p style="font-size:13px;color:var(--fg-muted);line-height:1.6;margin-bottom:12px;">High-intent PPC lead acquisition funnel delivering 3.1x growth in qualified insurance claims.</p>
+            <a href="../../work/dm-claims-ireland/index.html" style="font-size:12px;font-weight:700;color:var(--lime);text-decoration:none;">View Case Study ↗</a>
+          </div>
+        
+
+          <div style="background:hsla(240,10%,7%,0.8);border:1px solid var(--glass-border);border-radius:14px;padding:20px;">
+            <div style="font-family:var(--font-display);font-size:16px;font-weight:700;color:#ffffff;margin-bottom:6px;">
+              <a href="https://vardhmanadhesive.com" style="color:#ffffff;text-decoration:none;">Vardhaman Adhesive B2B →</a>
+            </div>
+            <p style="font-size:13px;color:var(--fg-muted);line-height:1.6;margin-bottom:12px;">B2B industrial catalog and quotation engine attracting enterprise procurement buyers.</p>
+            <a href="https://vardhmanadhesive.com" style="font-size:12px;font-weight:700;color:var(--lime);text-decoration:none;">View Case Study ↗</a>
+          </div>
+        
+          </div>
+
+          <!-- FAQ Accordion Section -->
+          <div class="faq-section">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <p class="faq-sub">Common questions founders and technical leads ask before starting a project with us.</p>
+            <div class="faq-accordion">
+              
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Why combine ad management with custom engineering?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Media buying alone fails if your landing page loads in 4 seconds and has friction. We engineer ultra-fast landing pages alongside your ad campaigns, drastically lowering cost-per-acquisition (CPA).</p>
+            </div>
+          </div>
+        
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Which ad platforms do you manage?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We manage Google Search, Google Performance Max, Meta (Instagram & Facebook), and LinkedIn B2B lead generation funnels.</p>
+            </div>
+          </div>
+        
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>What is your minimum ad spend requirement?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We typically work with brands investing ₹50,000+ ($600+) monthly in ad spend to ensure statistically meaningful data for algorithmic optimization.</p>
+            </div>
+          </div>
+        
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>How do you track conversions accurately?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We implement server-side Conversion API (CAPI) for Meta and Enhanced Conversions for Google Ads to bypass browser ad-blockers and iOS privacy restrictions.</p>
+            </div>
+          </div>
+        
+            </div>
+          </div>
         </div>
 
         <aside class="svc-sidebar">
           <div class="sidebar-box">
-            <h3>Media Channels</h3>
+            <h3>Engineering Presets</h3>
             <ul>
-              <li>Meta Ads (Facebook/IG)</li>
-              <li>Google Search &amp; Display</li>
-              <li>LinkedIn Campaigns</li>
-              <li>Meta Conversions API</li>
-              <li>Google Tag Manager</li>
-              <li>Figma Visual Assets</li>
+              <li>Next.js 14 / 15 App Router</li>
+              <li>React 19 & TypeScript</li>
+              <li>PostgreSQL & Supabase</li>
+              <li>Razorpay & Stripe APIs</li>
+              <li>Cloud VPS / LiteSpeed / Edge</li>
+              <li>TailwindCSS / Vanilla CSS</li>
             </ul>
           </div>
           
           <div class="sidebar-box">
             <h3>Key Benefits</h3>
             <ul>
-              <li>Targeted Lead Acquisition</li>
-              <li>High Return on Ad Spend (ROAS)</li>
-              <li>Exact Conversion Attribution</li>
-              <li>Custom Analytics Panels</li>
+              <li>Sub-second loading times (95+ score)</li>
+              <li>Zero recurring CMS app bloat</li>
+              <li>Direct WhatsApp / CRM lead dispatch</li>
+              <li>100% code ownership & source control</li>
             </ul>
+          </div>
+
+          <div class="sidebar-box" style="background:rgba(196,255,0,0.06);border-color:rgba(196,255,0,0.3);">
+            <h3 style="color:var(--lime);">Start Your Consultation</h3>
+            <p style="font-size:13px;color:var(--fg-muted);margin-bottom:14px;">Speak directly with our lead engineer about your system architecture and timeline.</p>
+            <a href="#contact-inquiry" class="btn-lime" style="width:100%;text-align:center;font-size:13px;padding:10px 16px;">Request Architectural Proposal →</a>
           </div>
         </aside>
       </div>
-      
-      <div style="text-align: center; margin-top: 40px;" class="reveal rd2">
-        <a href="../../index.html#contact" class="btn-lime">Discuss Your Ads Project →</a>
-      </div>
+
+      <!-- Embedded High-Converting Lead Inquiry Form -->
+      <section class="cta-section" id="contact-inquiry" style="padding-top:40px;">
+        <div class="lead-form-wrap">
+          <div class="lead-form-title">Consult on Your Performance Marketing & PPC Campaigns</div>
+          <div class="lead-form-sub">Tell us about your project parameters. Our lead engineer will reply within 24 hours with an architectural blueprint and investment breakdown.</div>
+
+          <form class="lead-form">
+            <input type="text" name="website_url" style="display:none;" tabindex="-1" autocomplete="off" />
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="name">Your Name / Company</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required />
+              </div>
+              <div class="form-group">
+                <label for="contact">Work Email or WhatsApp</label>
+                <input type="text" id="contact" name="contact" class="form-input" placeholder="e.g. alex@brand.com or +91 / +44" required />
+              </div>
+            </div>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service" class="form-select">
+                  <option value="Performance Marketing & PPC Campaigns">Performance Marketing & PPC Campaigns</option>
+                  <option value="Next.js Web Development">Next.js Web Development</option>
+                  <option value="Custom E-Commerce Boutique">Custom E-Commerce Boutique</option>
+                  <option value="Autonomous AI Voice & Workflow Automation">Autonomous AI Voice & Automation</option>
+                  <option value="Custom Business SaaS / ERP">Custom Business SaaS / ERP</option>
+                  <option value="Mobile App Development">Mobile App Development</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="budget">Target Investment Tier</label>
+                <select id="budget" name="budget" class="form-select">
+                  <option value="Standard Architecture">Boutique Architecture</option>
+                  <option value="Custom Enterprise">Custom Enterprise Build</option>
+                  <option value="Full Multi-System">Full Multi-System Deployment</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Scope & Requirements</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Briefly describe what you need built and your target launch date..."></textarea>
+            </div>
+            <div class="form-submit-row">
+              <button type="submit" class="btn-submit-lead">Submit Project Spec →</button>
+              <a href="https://wa.me/917878039395" target="_blank" rel="noopener" class="btn-whatsapp-instant">Or Chat on WhatsApp ⚡</a>
+            </div>
+            <div class="form-status-msg"></div>
+          </form>
+        </div>
+      </section>
     </section>
   </main>
 
@@ -157,24 +368,27 @@
       <div class="foot-top">
         <div>
           <div class="foot-logo">Pixel<em>Fizz</em></div>
-          <p class="foot-tagline">Premium full-stack engineering agency building high-performance web systems and digital campaigns that drive conversions.</p>
+          <p class="foot-tagline">We build fast websites, online stores, and AI-powered tools that help brands sell more and grow faster.</p>
         </div>
         <div>
           <div class="foot-col-title">Services</div>
           <ul class="foot-links">
-            <li><a href="../nextjs-development/index.html">Next.js Web Apps</a></li>
-            <li><a href="../ecommerce-boutiques/index.html">E-commerce Stores</a></li>
-            <li><a href="../custom-api-integrations/index.html">Custom API &amp; Integrations</a></li>
-            <li><a href="#">Performance Marketing</a></li>
-            <li><a href="../ai-automations-agents/index.html">AI Chatbots &amp; Agents</a></li>
+            <li><a href="../nextjs-development/index.html">High-Speed Websites</a></li>
+            <li><a href="../ecommerce-boutiques/index.html">Online Stores That Sell</a></li>
+            <li><a href="../custom-api-integrations/index.html">Connected Systems</a></li>
+            <li><a href="../ai-automations-agents/index.html">24/7 AI Assistants</a></li>
+            <li><a href="../mobile-apps/index.html">Custom Mobile Apps</a></li>
           </ul>
         </div>
         <div>
-          <div class="foot-col-title">Company</div>
+          <div class="foot-col-title">Case Studies</div>
           <ul class="foot-links">
-            <li><a href="../../index.html#work">Case Studies</a></li>
-            <li><a href="../../index.html#process">Our Process</a></li>
-            <li><a href="../../index.html#contact">Contact</a></li>
+            <li><a href="../../work/kagrecha-realty/index.html">Kagrecha's Realty</a></li>
+            <li><a href="../../work/sajraah-menswear/index.html">Sajraah Menswear</a></li>
+            <li><a href="../../work/winchester-health-centre/index.html">Winchester Health</a></li>
+            <li><a href="../../work/dm-claims-ireland/index.html">DM Claims</a></li>
+            <li><a href="../../work/guldaar-valley/index.html">Guldaar Valley</a></li>
+            <li><a href="../../work/voice-ai-telephony/index.html">VoiceAI Telephony</a></li>
           </ul>
         </div>
         <div>
@@ -191,16 +405,15 @@
       <div class="foot-bottom">
         <div class="foot-copy">© 2026 PixelFizz. All rights reserved. Registered Professional Service.</div>
         <div class="foot-socials">
-          <a href="https://instagram.com/ChawlaaG" target="_blank" rel="noopener" title="Instagram" id="social-ig">ig</a>
-          <a href="https://www.linkedin.com/in/chawlaag/" target="_blank" rel="noopener" title="LinkedIn" id="social-in">in</a>
-          <a href="https://twitter.com/ChalwaaG" target="_blank" rel="noopener" title="Twitter / X" id="social-x">𝕏</a>
-          <a href="https://wa.me/917878039395" target="_blank" rel="noopener" title="WhatsApp" id="social-wa">wa</a>
+          <a href="https://instagram.com/ChawlaaG" target="_blank" rel="noopener" title="Instagram">ig</a>
+          <a href="https://www.linkedin.com/in/chawlaag/" target="_blank" rel="noopener" title="LinkedIn">in</a>
+          <a href="https://twitter.com/ChalwaaG" target="_blank" rel="noopener" title="Twitter / X">𝕏</a>
+          <a href="https://wa.me/917878039395" target="_blank" rel="noopener" title="WhatsApp">wa</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- ══ INTERACTIVE ELEMENTS LOGIC ══ -->
   <script src="../../main.js" defer></script>
 </body>
 </html>

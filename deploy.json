@@ -1,0 +1,35 @@
+{
+  "projectId": "pixelfizz",
+  "version": "2.0.0",
+  "buildScript": "build_regions.py",
+  "environments": {
+    "india": {
+      "targetDomain": "pixelfizz.in",
+      "environment": "production",
+      "distDir": "dist/in",
+      "remotePath": "/home/u410477256/domains/pixelfizz.in/public_html",
+      "leadPartner": "Manish Chawla",
+      "phone": "+91 78780 39395",
+      "email": "hello@pixelfizz.in"
+    },
+    "uk": {
+      "targetDomain": "pixelfizz.co.uk",
+      "environment": "production",
+      "distDir": "dist/uk",
+      "remotePath": "/home/u410477256/domains/pixelfizz.co.uk/public_html",
+      "leadPartner": "Punit",
+      "phone": "+44 7767 196624",
+      "email": "hello@pixelfizz.co.uk"
+    }
+  },
+  "exclude": [
+    ".git*",
+    "node_modules*",
+    "*.py",
+    "*.bat",
+    "*.ps1",
+    "*.md",
+    ".env*",
+    "deploy.json"
+  ]
+}

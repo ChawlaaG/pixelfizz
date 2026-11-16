@@ -3,56 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Next.js Web Development | Pixel Fizz Service</title>
-  <meta name="description" content="High-performance React and Next.js web application development services. We build SEO-optimized, blazing-fast, and highly secure edge-rendered systems to solve slow page speeds and user conversion challenges." />
+  <title>Next.js Web Development | PixelFizz</title>
+  <meta name="description" content="High-performance React & Next.js web application engineering. We build SEO-optimized, blazing-fast, edge-rendered platforms with 95+ Core Web Vitals." />
   <link rel="canonical" href="https://pixelfizz.in/services/nextjs-development/" />
   
-  <!-- Multi-Region Dual-Domain SEO Hreflang Tags (India & UK) -->
+  <!-- Multi-Region Dual-Domain SEO Hreflang Tags -->
   <link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/nextjs-development/" />
   <link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/nextjs-development/" />
   <link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/nextjs-development/" />
 
-  <!-- Preconnect to Google Fonts -->
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PixelFizz" />
+  <meta property="og:url" content="https://pixelfizz.in/services/nextjs-development/" />
+  <meta property="og:title" content="Next.js Web Development | PixelFizz" />
+  <meta property="og:description" content="High-performance React & Next.js web application engineering. We build SEO-optimized, blazing-fast, edge-rendered platforms with 95+ Core Web Vitals." />
+  <meta property="og:image" content="https://pixelfizz.in/assets/og-default.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://pixelfizz.in/services/nextjs-development/" />
+  <meta name="twitter:title" content="Next.js Web Development | PixelFizz" />
+  <meta name="twitter:description" content="High-performance React & Next.js web application engineering. We build SEO-optimized, blazing-fast, edge-rendered platforms with 95+ Core Web Vitals." />
+  <meta name="twitter:image" content="https://pixelfizz.in/assets/og-default.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" />
+
+  <!-- Preconnect & Asynchronous Google Fonts Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" />
+  </noscript>
   
-  <!-- Premium CSS Sheet (Relative to subfolder) -->
+  <!-- Premium Unified CSS -->
   <link rel="stylesheet" href="../../style.css" />
 
-  <!-- Unified Dual-Domain Engine -->
-  <script src="../../domain-config.js"></script>
-
-  <!-- Structured Data JSON-LD Schema (ProfessionalService) -->
+  <!-- Structured Data JSON-LD Schema (Service + BreadcrumbList + FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "@id": "https://pixelfizz.in/#organization",
-    "name": "Pixel Fizz",
-    "url": "https://pixelfizz.in",
-    "logo": "https://pixelfizz.in/assets/logo.png",
-    "image": "https://pixelfizz.in/assets/hero.jpg",
-    "description": "Premium full-stack web development agency specializing in Next.js development, custom e-commerce engineering, and API integrations.",
-    "telephone": "+917878039395",
-    "priceRange": "$$$",
-    "address": [
+    "@graph": [
       {
-        "@type": "PostalAddress",
-        "addressLocality": "Vapi",
-        "addressRegion": "Gujarat",
-        "addressCountry": "IN"
+        "@type": "Service",
+        "@id": "https://pixelfizz.in/services/nextjs-development/#service",
+        "name": "Next.js Web Application Development",
+        "description": "High-performance React & Next.js web application engineering. We build SEO-optimized, blazing-fast, edge-rendered platforms with 95+ Core Web Vitals.",
+        "provider": {
+          "@type": "Organization",
+          "name": "PixelFizz",
+          "url": "https://pixelfizz.in",
+          "logo": "https://pixelfizz.in/assets/logo.png"
+        },
+        "areaServed": ["IN", "GB"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Next.js Web Application Development",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Next.js Web Application Development"
+              }
+            }
+          ]
+        }
       },
       {
-        "@type": "PostalAddress",
-        "addressLocality": "Winchester",
-        "addressRegion": "Hampshire",
-        "addressCountry": "GB"
+        "@type": "BreadcrumbList",
+        "@id": "https://pixelfizz.in/services/nextjs-development/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://pixelfizz.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://pixelfizz.in/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Next.js Web Application Development",
+            "item": "https://pixelfizz.in/services/nextjs-development/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://pixelfizz.in/services/nextjs-development/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why choose Next.js over traditional WordPress or Webflow?",
+            "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Next.js compiles to server-rendered HTML and edge-cached static pages with zero code bloat. This delivers 95+ Google Core Web Vitals, instant page navigations, and unparalleled Google Search indexability that traditional CMS themes cannot match."
+            }
+},
+          {
+            "@type": "Question",
+            "name": "What is the typical timeline for a Next.js build?",
+            "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Most bespoke web applications and boutique websites are designed, engineered, and launched in 3 to 6 weeks, complete with staging reviews and comprehensive pre-flight speed tests."
+            }
+},
+          {
+            "@type": "Question",
+            "name": "How do we update content after launch?",
+            "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We integrate modern headless CMS solutions like Sanity, Strapi, or Supabase, allowing your non-technical marketing team to update copy, case studies, and media effortlessly."
+            }
+},
+          {
+            "@type": "Question",
+            "name": "What post-launch SLA and maintenance do you offer?",
+            "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Every build includes 30 days of complimentary hyper-care warranty covering bug fixes and performance audits, followed by flexible ongoing maintenance tiers."
+            }
+}
+        ]
       }
-    ],
-    "sameAs": [
-      "https://instagram.com/ChawlaaG",
-      "https://www.linkedin.com/in/chawlaag/",
-      "https://twitter.com/ChalwaaG"
     ]
   }
   </script>
@@ -76,7 +157,7 @@
         </ul>
       </nav>
       <div class="nav-actions">
-        <a href="../../index.html#contact" class="nav-cta" id="nav-cta-btn">Let's Talk →</a>
+        <a href="../../index.html#contact" class="nav-cta" id="nav-cta-btn">Start a Project →</a>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -89,65 +170,195 @@
   <main>
     <section class="service-detail">
       <div class="svc-detail-header reveal">
-        <span class="section-tag">Core Development Service</span>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumbs-sep">/</span>
+          <a href="../../index.html#services">Services</a>
+          <span class="breadcrumbs-sep">/</span>
+          <span class="breadcrumbs-current">nextjs-development</span>
+        </nav>
+
+        <span class="section-tag">Engineering Service</span>
         <h1 class="svc-detail-title">Next.js Web Application Development</h1>
-        <p class="svc-detail-hero-desc">
-          We engineer high-performance React-based architectures utilizing Next.js to deliver server-side rendered (SSR), static-site generated (SSG), and edge-cached web platforms that achieve perfect Google Lighthouse scores.
-        </p>
+        <p class="svc-detail-hero-desc">High-performance React & Next.js web application engineering. We build SEO-optimized, blazing-fast, edge-rendered platforms with 95+ Core Web Vitals.</p>
       </div>
 
       <div class="svc-detail-body reveal rd1">
         <div class="svc-content">
           <h2>What Problems We Solve for Clients</h2>
           <p>
-            Traditional client-side rendered Single Page Applications (SPAs) suffer from slow initial load times, resulting in poor user engagement and elevated bounce rates. More critically, search engines struggle to crawl and index client-side JavaScript, leaving companies invisible to target search terms.
+            Slow websites, fragmented third-party software, and high customer drop-off rates directly erode commercial revenue. Most businesses struggle with bloated CMS themes that look fine on desktop but drag down mobile speed scores and leave search engines unable to index content efficiently.
           </p>
           <p>
-            At Pixel Fizz, we eliminate these search engine visibility and performance issues by building server-side pre-rendered and statically generated layouts. By leveraging Next.js App Router, advanced route prefetching, image optimization pipelines, and edge computing layouts, we ensure your site loads under 1 second.
+            PixelFizz eliminates these bottlenecks by engineering production architectures with zero-bloat code, sub-second response times, and hardened security. We align modern engineering with clear commercial metrics: higher checkout conversions, lower cost per lead, and complete system reliability.
           </p>
 
-          <h2>Our Technical Capabilities</h2>
+          <h2>Our Technical Capabilities & Standards</h2>
           <ul>
-            <li><strong>Next.js App Router Architecture:</strong> Seamlessly nested layout routing, React Server Components (RSC) to reduce client JS payload, and optimized data-fetching streams.</li>
-            <li><strong>Core Web Vitals Optimization:</strong> Zero Cumulative Layout Shift (CLS), minimal Interaction to Next Paint (INP), and fast Largest Contentful Paint (LCP).</li>
-            <li><strong>Edge Cache Rendering:</strong> Deploying sites onto edge node content delivery networks (CDNs) like Vercel and Cloudflare for instant global response times.</li>
-            <li><strong>SEO &amp; Structured Schema Design:</strong> Seamless dynamic metadata injection, programmatic canonical paths, sitemaps, and robots configuration.</li>
+            <li><strong>Zero-Bloat Full-Stack Architecture:</strong> Engineered with modern frameworks to minimize client-side bundle sizes and achieve 95+ Core Web Vitals.</li>
+            <li><strong>Automated Lead & Transaction Pipelines:</strong> Seamless integrations with payment gateways, WhatsApp business endpoints, and CRM systems.</li>
+            <li><strong>Search Engine & GEO Optimization:</strong> Automated JSON-LD schema, clean semantic hierarchy, and programmatic sitemaps for Google and generative AI engines.</li>
+            <li><strong>High-Availability Edge Deployment:</strong> Configured for high traffic surges with robust caching headers, GZIP/Brotli compression, and security shielding.</li>
           </ul>
 
-          <h2>Typical Project Scope</h2>
-          <p>
-            Every Next.js project begins with an audit of your current system metrics. We review performance pain points, structure the navigation models, create high-fidelity responsive layouts, and hand off a fully-tested build optimized for conversions.
-          </p>
+          <!-- Related Case Studies Showcase -->
+          <h2 style="margin-top:36px;">Featured Case Studies in This Category</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:16px;margin:20px 0 32px;">
+            
+          <div style="background:hsla(240,10%,7%,0.8);border:1px solid var(--glass-border);border-radius:14px;padding:20px;">
+            <div style="font-family:var(--font-display);font-size:16px;font-weight:700;color:#ffffff;margin-bottom:6px;">
+              <a href="../../work/kagrecha-realty/index.html" style="color:#ffffff;text-decoration:none;">Kagrecha's Realty Portal →</a>
+            </div>
+            <p style="font-size:13px;color:var(--fg-muted);line-height:1.6;margin-bottom:12px;">926+ property real estate platform with instant search and sub-400ms filter latency.</p>
+            <a href="../../work/kagrecha-realty/index.html" style="font-size:12px;font-weight:700;color:var(--lime);text-decoration:none;">View Case Study ↗</a>
+          </div>
+        
+
+          <div style="background:hsla(240,10%,7%,0.8);border:1px solid var(--glass-border);border-radius:14px;padding:20px;">
+            <div style="font-family:var(--font-display);font-size:16px;font-weight:700;color:#ffffff;margin-bottom:6px;">
+              <a href="../../work/guldaar-valley/index.html" style="color:#ffffff;text-decoration:none;">Guldaar Valley Resort →</a>
+            </div>
+            <p style="font-size:13px;color:var(--fg-muted);line-height:1.6;margin-bottom:12px;">Luxury resort web showcase with direct commission-free booking engine.</p>
+            <a href="../../work/guldaar-valley/index.html" style="font-size:12px;font-weight:700;color:var(--lime);text-decoration:none;">View Case Study ↗</a>
+          </div>
+        
+          </div>
+
+          <!-- FAQ Accordion Section -->
+          <div class="faq-section">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <p class="faq-sub">Common questions founders and technical leads ask before starting a project with us.</p>
+            <div class="faq-accordion">
+              
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Why choose Next.js over traditional WordPress or Webflow?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Next.js compiles to server-rendered HTML and edge-cached static pages with zero code bloat. This delivers 95+ Google Core Web Vitals, instant page navigations, and unparalleled Google Search indexability that traditional CMS themes cannot match.</p>
+            </div>
+          </div>
+        
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>What is the typical timeline for a Next.js build?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Most bespoke web applications and boutique websites are designed, engineered, and launched in 3 to 6 weeks, complete with staging reviews and comprehensive pre-flight speed tests.</p>
+            </div>
+          </div>
+        
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>How do we update content after launch?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We integrate modern headless CMS solutions like Sanity, Strapi, or Supabase, allowing your non-technical marketing team to update copy, case studies, and media effortlessly.</p>
+            </div>
+          </div>
+        
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>What post-launch SLA and maintenance do you offer?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Every build includes 30 days of complimentary hyper-care warranty covering bug fixes and performance audits, followed by flexible ongoing maintenance tiers.</p>
+            </div>
+          </div>
+        
+            </div>
+          </div>
         </div>
 
         <aside class="svc-sidebar">
           <div class="sidebar-box">
-            <h3>Tech Stack Presets</h3>
+            <h3>Engineering Presets</h3>
             <ul>
-              <li>Next.js 14 / 15</li>
-              <li>React 18 / 19</li>
-              <li>TypeScript</li>
-              <li>Vercel / Cloudflare Edge</li>
+              <li>Next.js 14 / 15 App Router</li>
+              <li>React 19 & TypeScript</li>
+              <li>PostgreSQL & Supabase</li>
+              <li>Razorpay & Stripe APIs</li>
+              <li>Cloud VPS / LiteSpeed / Edge</li>
               <li>TailwindCSS / Vanilla CSS</li>
-              <li>Sanity / Strapi Headless CMS</li>
             </ul>
           </div>
           
           <div class="sidebar-box">
             <h3>Key Benefits</h3>
             <ul>
-              <li>Instant loading times</li>
-              <li>Perfect SEO crawlability</li>
-              <li>Edge-based server security</li>
-              <li>Highly-converting UX</li>
+              <li>Sub-second loading times (95+ score)</li>
+              <li>Zero recurring CMS app bloat</li>
+              <li>Direct WhatsApp / CRM lead dispatch</li>
+              <li>100% code ownership & source control</li>
             </ul>
+          </div>
+
+          <div class="sidebar-box" style="background:rgba(196,255,0,0.06);border-color:rgba(196,255,0,0.3);">
+            <h3 style="color:var(--lime);">Start Your Consultation</h3>
+            <p style="font-size:13px;color:var(--fg-muted);margin-bottom:14px;">Speak directly with our lead engineer about your system architecture and timeline.</p>
+            <a href="#contact-inquiry" class="btn-lime" style="width:100%;text-align:center;font-size:13px;padding:10px 16px;">Request Architectural Proposal →</a>
           </div>
         </aside>
       </div>
-      
-      <div style="text-align: center; margin-top: 40px;" class="reveal rd2">
-        <a href="../../index.html#contact" class="btn-lime">Discuss Your Next.js Project →</a>
-      </div>
+
+      <!-- Embedded High-Converting Lead Inquiry Form -->
+      <section class="cta-section" id="contact-inquiry" style="padding-top:40px;">
+        <div class="lead-form-wrap">
+          <div class="lead-form-title">Consult on Your Next.js Web Application Development</div>
+          <div class="lead-form-sub">Tell us about your project parameters. Our lead engineer will reply within 24 hours with an architectural blueprint and investment breakdown.</div>
+
+          <form class="lead-form">
+            <input type="text" name="website_url" style="display:none;" tabindex="-1" autocomplete="off" />
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="name">Your Name / Company</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required />
+              </div>
+              <div class="form-group">
+                <label for="contact">Work Email or WhatsApp</label>
+                <input type="text" id="contact" name="contact" class="form-input" placeholder="e.g. alex@brand.com or +91 / +44" required />
+              </div>
+            </div>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service" class="form-select">
+                  <option value="Next.js Web Application Development">Next.js Web Application Development</option>
+                  <option value="Next.js Web Development">Next.js Web Development</option>
+                  <option value="Custom E-Commerce Boutique">Custom E-Commerce Boutique</option>
+                  <option value="Autonomous AI Voice & Workflow Automation">Autonomous AI Voice & Automation</option>
+                  <option value="Custom Business SaaS / ERP">Custom Business SaaS / ERP</option>
+                  <option value="Mobile App Development">Mobile App Development</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="budget">Target Investment Tier</label>
+                <select id="budget" name="budget" class="form-select">
+                  <option value="Standard Architecture">Boutique Architecture</option>
+                  <option value="Custom Enterprise">Custom Enterprise Build</option>
+                  <option value="Full Multi-System">Full Multi-System Deployment</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Scope & Requirements</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Briefly describe what you need built and your target launch date..."></textarea>
+            </div>
+            <div class="form-submit-row">
+              <button type="submit" class="btn-submit-lead">Submit Project Spec →</button>
+              <a href="https://wa.me/917878039395" target="_blank" rel="noopener" class="btn-whatsapp-instant">Or Chat on WhatsApp ⚡</a>
+            </div>
+            <div class="form-status-msg"></div>
+          </form>
+        </div>
+      </section>
     </section>
   </main>
 
@@ -157,24 +368,27 @@
       <div class="foot-top">
         <div>
           <div class="foot-logo">Pixel<em>Fizz</em></div>
-          <p class="foot-tagline">Premium full-stack engineering agency building high-performance web systems and digital campaigns that drive conversions.</p>
+          <p class="foot-tagline">We build fast websites, online stores, and AI-powered tools that help brands sell more and grow faster.</p>
         </div>
         <div>
           <div class="foot-col-title">Services</div>
           <ul class="foot-links">
-            <li><a href="#">Next.js Web Apps</a></li>
-            <li><a href="../ecommerce-boutiques/index.html">E-commerce Stores</a></li>
-            <li><a href="../custom-api-integrations/index.html">Custom API &amp; Integrations</a></li>
-            <li><a href="../../index.html#services">Performance Marketing</a></li>
-            <li><a href="../../index.html#services">AI Chatbots &amp; Agents</a></li>
+            <li><a href="../nextjs-development/index.html">High-Speed Websites</a></li>
+            <li><a href="../ecommerce-boutiques/index.html">Online Stores That Sell</a></li>
+            <li><a href="../custom-api-integrations/index.html">Connected Systems</a></li>
+            <li><a href="../ai-automations-agents/index.html">24/7 AI Assistants</a></li>
+            <li><a href="../mobile-apps/index.html">Custom Mobile Apps</a></li>
           </ul>
         </div>
         <div>
-          <div class="foot-col-title">Company</div>
+          <div class="foot-col-title">Case Studies</div>
           <ul class="foot-links">
-            <li><a href="../../index.html#work">Case Studies</a></li>
-            <li><a href="../../index.html#process">Our Process</a></li>
-            <li><a href="../../index.html#contact">Contact</a></li>
+            <li><a href="../../work/kagrecha-realty/index.html">Kagrecha's Realty</a></li>
+            <li><a href="../../work/sajraah-menswear/index.html">Sajraah Menswear</a></li>
+            <li><a href="../../work/winchester-health-centre/index.html">Winchester Health</a></li>
+            <li><a href="../../work/dm-claims-ireland/index.html">DM Claims</a></li>
+            <li><a href="../../work/guldaar-valley/index.html">Guldaar Valley</a></li>
+            <li><a href="../../work/voice-ai-telephony/index.html">VoiceAI Telephony</a></li>
           </ul>
         </div>
         <div>
@@ -191,16 +405,15 @@
       <div class="foot-bottom">
         <div class="foot-copy">© 2026 PixelFizz. All rights reserved. Registered Professional Service.</div>
         <div class="foot-socials">
-          <a href="https://instagram.com/ChawlaaG" target="_blank" rel="noopener" title="Instagram" id="social-ig">ig</a>
-          <a href="https://www.linkedin.com/in/chawlaag/" target="_blank" rel="noopener" title="LinkedIn" id="social-in">in</a>
-          <a href="https://twitter.com/ChalwaaG" target="_blank" rel="noopener" title="Twitter / X" id="social-x">𝕏</a>
-          <a href="https://wa.me/917878039395" target="_blank" rel="noopener" title="WhatsApp" id="social-wa">wa</a>
+          <a href="https://instagram.com/ChawlaaG" target="_blank" rel="noopener" title="Instagram">ig</a>
+          <a href="https://www.linkedin.com/in/chawlaag/" target="_blank" rel="noopener" title="LinkedIn">in</a>
+          <a href="https://twitter.com/ChalwaaG" target="_blank" rel="noopener" title="Twitter / X">𝕏</a>
+          <a href="https://wa.me/917878039395" target="_blank" rel="noopener" title="WhatsApp">wa</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- ══ INTERACTIVE ELEMENTS LOGIC ══ -->
   <script src="../../main.js" defer></script>
 </body>
 </html>

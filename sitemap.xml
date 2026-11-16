@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <!-- ════ HOMEPAGE ════ -->
   <url>
     <loc>https://pixelfizz.in/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,18 +15,16 @@
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- ════ SERVICES: Next.js Development ════ -->
   <url>
     <loc>https://pixelfizz.in/services/nextjs-development/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/nextjs-development/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/nextjs-development/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/nextjs-development/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -36,18 +33,16 @@
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/nextjs-development/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/nextjs-development/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/nextjs-development/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- ════ SERVICES: E-commerce Boutiques ════ -->
   <url>
     <loc>https://pixelfizz.in/services/ecommerce-boutiques/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/ecommerce-boutiques/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/ecommerce-boutiques/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/ecommerce-boutiques/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -56,18 +51,16 @@
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/ecommerce-boutiques/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/ecommerce-boutiques/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/ecommerce-boutiques/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- ════ SERVICES: Custom API Integrations ════ -->
   <url>
     <loc>https://pixelfizz.in/services/custom-api-integrations/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/custom-api-integrations/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/custom-api-integrations/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/custom-api-integrations/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -76,18 +69,16 @@
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/custom-api-integrations/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/custom-api-integrations/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/custom-api-integrations/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- ════ SERVICES: AI Automations & Agents ════ -->
   <url>
     <loc>https://pixelfizz.in/services/ai-automations-agents/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/ai-automations-agents/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/ai-automations-agents/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/ai-automations-agents/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -96,18 +87,16 @@
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/ai-automations-agents/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/ai-automations-agents/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/ai-automations-agents/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- ════ SERVICES: Performance Marketing ════ -->
   <url>
     <loc>https://pixelfizz.in/services/performance-marketing/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/performance-marketing/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/performance-marketing/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/performance-marketing/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -116,18 +105,16 @@
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/performance-marketing/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/performance-marketing/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/performance-marketing/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- ════ SERVICES: Mobile Apps ════ -->
   <url>
     <loc>https://pixelfizz.in/services/mobile-apps/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/mobile-apps/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/mobile-apps/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/mobile-apps/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -136,18 +123,16 @@
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/mobile-apps/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/mobile-apps/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/mobile-apps/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- ════ SERVICES: SaaS & ERP Systems ════ -->
   <url>
     <loc>https://pixelfizz.in/services/saas-erp-systems/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/saas-erp-systems/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/saas-erp-systems/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/saas-erp-systems/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -156,18 +141,16 @@
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/saas-erp-systems/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/saas-erp-systems/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/saas-erp-systems/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- ════ SERVICES: SEO & GEO Optimization ════ -->
   <url>
     <loc>https://pixelfizz.in/services/seo-geo-optimization/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/seo-geo-optimization/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/seo-geo-optimization/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/seo-geo-optimization/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -176,18 +159,16 @@
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/seo-geo-optimization/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/seo-geo-optimization/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/seo-geo-optimization/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- ════ SERVICES: Branding & Corporate Identity ════ -->
   <url>
     <loc>https://pixelfizz.in/services/branding-corporate-identity/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/branding-corporate-identity/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/branding-corporate-identity/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/branding-corporate-identity/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -196,18 +177,16 @@
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/branding-corporate-identity/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/branding-corporate-identity/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/branding-corporate-identity/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- ════ SERVICES: CTO as a Service ════ -->
   <url>
     <loc>https://pixelfizz.in/services/cto-as-a-service/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/cto-as-a-service/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/cto-as-a-service/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/cto-as-a-service/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -216,18 +195,16 @@
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/cto-as-a-service/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/cto-as-a-service/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/cto-as-a-service/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- ════ SERVICES: Web3, Blockchain & IoT ════ -->
   <url>
     <loc>https://pixelfizz.in/services/web3-blockchain-iot/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/web3-blockchain-iot/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/web3-blockchain-iot/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/web3-blockchain-iot/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -236,8 +213,116 @@
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/web3-blockchain-iot/" />
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/web3-blockchain-iot/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/web3-blockchain-iot/" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://pixelfizz.in/work/kagrecha-realty/</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/work/kagrecha-realty/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/work/kagrecha-realty/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/work/kagrecha-realty/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pixelfizz.co.uk/work/kagrecha-realty/</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/work/kagrecha-realty/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/work/kagrecha-realty/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/work/kagrecha-realty/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pixelfizz.in/work/sajraah-menswear/</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/work/sajraah-menswear/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/work/sajraah-menswear/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/work/sajraah-menswear/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pixelfizz.co.uk/work/sajraah-menswear/</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/work/sajraah-menswear/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/work/sajraah-menswear/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/work/sajraah-menswear/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pixelfizz.in/work/winchester-health-centre/</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/work/winchester-health-centre/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/work/winchester-health-centre/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/work/winchester-health-centre/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pixelfizz.co.uk/work/winchester-health-centre/</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/work/winchester-health-centre/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/work/winchester-health-centre/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/work/winchester-health-centre/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pixelfizz.in/work/dm-claims-ireland/</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/work/dm-claims-ireland/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/work/dm-claims-ireland/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/work/dm-claims-ireland/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pixelfizz.co.uk/work/dm-claims-ireland/</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/work/dm-claims-ireland/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/work/dm-claims-ireland/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/work/dm-claims-ireland/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pixelfizz.in/work/guldaar-valley/</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/work/guldaar-valley/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/work/guldaar-valley/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/work/guldaar-valley/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pixelfizz.co.uk/work/guldaar-valley/</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/work/guldaar-valley/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/work/guldaar-valley/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/work/guldaar-valley/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pixelfizz.in/work/voice-ai-telephony/</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/work/voice-ai-telephony/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/work/voice-ai-telephony/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/work/voice-ai-telephony/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pixelfizz.co.uk/work/voice-ai-telephony/</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/work/voice-ai-telephony/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/work/voice-ai-telephony/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/work/voice-ai-telephony/" />
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>

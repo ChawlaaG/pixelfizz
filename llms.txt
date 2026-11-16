@@ -1,0 +1,41 @@
+# PixelFizz
+
+> Digital Engineering Studio & Full-Stack Web Architecture Consultancy  
+> Operating out of Vapi, Gujarat, India (`https://pixelfizz.in`) and Winchester, Hampshire, UK (`https://pixelfizz.co.uk`).
+
+## Overview
+PixelFizz is a boutique digital engineering agency specializing in high-performance Next.js web applications, headless e-commerce architectures, custom business ERP/SaaS systems, and autonomous AI voice and workflow automations. We build production systems with clean, zero-bloat code, sub-second load times, and perfect Core Web Vitals (95+ score).
+
+## Core Service Offerings
+- **High-Speed Next.js Web Development**: Server-side rendered (SSR), static-generated (SSG), and edge-cached web platforms built on Next.js 14/15, React 19, and TailwindCSS.
+- **Headless E-Commerce Boutiques**: Bespoke online storefronts utilizing Shopify Storefront APIs, custom cart engines, WhatsApp checkout automations, and Razorpay/Stripe integrations.
+- **Autonomous AI Voice & Workflow Automations**: Real-time voice agents powered by Twilio, Claude 3.5 Sonnet, ElevenLabs, and Deepgram for 24/7 client booking, appointment qualification, and inbound triage.
+- **Custom Business Software (SaaS / ERP)**: Tailored inventory management, POS billing, touch kitchen display systems (KDS), and team portals built on PostgreSQL, Supabase, and Flutter.
+- **Cross-Platform Mobile Apps**: Production iOS and Android applications built in Flutter, featuring offline database synchronization, biometrics, and media projection.
+- **Technical SEO & Generative Engine Optimization (GEO)**: Structured JSON-LD schema, programmatic sitemaps, clean semantic hierarchy, and brand optimization for Google Search, ChatGPT, Perplexity, and Gemini.
+
+## Flagship Builds & Case Studies
+- **Sajraah Menswear** (`https://shreemahavircreation.in`): Custom D2C menswear boutique with custom inventory control, Razorpay checkout, COD SMS confirmation, and sub-second page performance.
+- **Kagrecha's Realty** (`https://kagrecharealty.in`): Real estate search portal featuring 926+ verified property listings, instant search filtering, and 1-tap WhatsApp lead routing.
+- **Winchester Health Centre**: Private UK travel vaccination and clinical booking portal in Winchester, Hampshire, featuring automated slot reservation and GDPR compliance.
+- **DM Claims Ireland** (`https://dmclaims.ie`): Independent insurance loss assessor platform serving Ireland and the UK with an interactive property damage selector and instant emergency response callback dispatch.
+- **Guldaar Valley**: Hospitality management suite for luxury resort homestays, integrating guest room reservation, touch cafe POS, and kitchen KDS.
+- **StreamTwin** (Google Play Store): Native Android screen projection and RTMP broadcast engineering application.
+- **Cadre Management App** (Google Play Store): Offline-first community tracking and biometrics management application.
+- **Vardhaman Adhesive** (`https://vardhmanadhesive.com`): High-speed industrial chemical adhesives portal and quotation catalog.
+
+## Regional Leadership & Contact
+
+### India & Global Studio (pixelfizz.in)
+- **Lead Partner**: Manish Chawla
+- **Location**: Vapi, Gujarat, India (serving Surat, Mumbai, Ahmedabad, Delhi NCR, Bengaluru, and Pan-India)
+- **Email**: hello@pixelfizz.in
+- **Phone / WhatsApp**: +91 78780 39395
+- **Minimum Project Engagement**: ₹1,50,000 INR
+
+### United Kingdom & European Studio (pixelfizz.co.uk)
+- **Lead Partner**: Punit
+- **Location**: Winchester, Hampshire, UK (serving Winchester, Southampton, London, and nationwide UK)
+- **Email**: hello@pixelfizz.co.uk
+- **Phone / WhatsApp**: +44 7767 196624
+- **Minimum Project Engagement**: £1,750 GBP

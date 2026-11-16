@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4ff00"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <!-- Geometric Icon -->
+  <rect x="10" y="15" width="50" height="50" rx="12" fill="#0c0e14" stroke="#ffffff" stroke-opacity="0.1" stroke-width="2"/>
+  <rect x="22" y="27" width="14" height="14" rx="3" fill="#ffffff"/>
+  <rect x="38" y="27" width="10" height="10" rx="2" fill="url(#limeGrad)"/>
+  <rect x="22" y="43" width="10" height="10" rx="2" fill="url(#limeGrad)"/>
+  <rect x="34" y="39" width="14" height="14" rx="3" fill="#ffffff" fill-opacity="0.8"/>
+  
+  <!-- Wordmark -->
+  <text x="75" y="52" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Pixel<tspan fill="url(#limeGrad)" font-style="italic">Fizz</tspan></text>
+  <circle cx="230" cy="30" r="3.5" fill="#c4ff00"/>
+</svg>

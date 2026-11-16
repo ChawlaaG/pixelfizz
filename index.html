@@ -12,177 +12,75 @@
   <link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/" />
   <link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/" />
   
-  <!-- Preconnect to Google Fonts -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Open Graph & Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PixelFizz" />
+  <meta property="og:url" content="https://pixelfizz.in/" />
+  <meta property="og:title" content="PixelFizz | Websites, Online Stores &amp; AI Tools That Win Customers" />
+  <meta property="og:description" content="PixelFizz builds fast Next.js websites, headless online stores, and AI tools that turn visitors into paying customers. 95+ Core Web Vitals guaranteed." />
+  <meta property="og:image" content="https://pixelfizz.in/assets/og-default.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://pixelfizz.in/" />
+  <meta name="twitter:title" content="PixelFizz | Websites, Online Stores &amp; AI Tools That Win Customers" />
+  <meta name="twitter:description" content="PixelFizz builds fast Next.js websites, headless online stores, and AI tools that turn visitors into paying customers. 95+ Core Web Vitals guaranteed." />
+  <meta name="twitter:image" content="https://pixelfizz.in/assets/og-default.jpg" />
+
+  <!-- Preconnect & Asynchronous Google Fonts Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" />
+  </noscript>
   
   <!-- Premium CSS Sheet -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Unified Dual-Domain Engine -->
-  <script src="domain-config.js"></script>
+  <!-- Unified Dual-Domain Progressive Enhancement -->
+  <script src="domain-config.js" defer></script>
 
-  <!-- Structured Data JSON-LD Schema (ProfessionalService) -->
+  <!-- Structured Data JSON-LD Schema (ProfessionalService + Organization + WebSite) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "@id": "https://pixelfizz.in/#organization",
-    "name": "Pixel Fizz",
-    "url": "https://pixelfizz.in",
-    "logo": "https://pixelfizz.in/assets/logo.png",
-    "image": "https://pixelfizz.in/assets/hero.jpg",
-    "description": "Premium full-stack web development agency specializing in Next.js development, custom e-commerce engineering, and API integrations.",
-    "telephone": "+917878039395",
-    "priceRange": "$$$",
-    "address": [
+    "@graph": [
       {
-        "@type": "PostalAddress",
-        "addressLocality": "Vapi",
-        "addressRegion": "Gujarat",
-        "addressCountry": "IN"
+        "@type": "ProfessionalService",
+        "@id": "https://pixelfizz.in/#organization",
+        "name": "PixelFizz",
+        "url": "https://pixelfizz.in",
+        "logo": "https://pixelfizz.in/assets/logo.png",
+        "image": "https://pixelfizz.in/assets/og-default.jpg",
+        "description": "Full-stack web engineering studio specializing in high-speed Next.js web applications, headless e-commerce, custom ERP/SaaS platforms, and autonomous AI voice agents.",
+        "telephone": "+917878039395",
+        "email": "hello@pixelfizz.in",
+        "priceRange": "$$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Vapi",
+          "addressRegion": "Gujarat",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://instagram.com/ChawlaaG",
+          "https://www.linkedin.com/in/chawlaag/",
+          "https://twitter.com/ChalwaaG"
+        ]
       },
       {
-        "@type": "PostalAddress",
-        "addressLocality": "Winchester",
-        "addressRegion": "Hampshire",
-        "addressCountry": "GB"
-      }
-    ],
-    "sameAs": [
-      "https://www.linkedin.com/company/pixelfizz",
-      "https://wa.me/917878039395"
-    ],
-    "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Vapi, Gujarat, India"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Daman, India"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Silvassa, India"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Valsad, India"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Winchester, UK"
-      }
-    ],
-    "knowsAbout": [
-      "Next.js Development",
-      "Headless E-commerce Architecture",
-      "WhatsApp Checkout Integration Logic",
-      "Twilio AI Voice Agent Orchestration",
-      "Meta Ads Lead Generation Funnels",
-      "B2B Client Acquisition Systems",
-      "Mobile App Development (iOS & Android)",
-      "Custom SaaS & ERP Systems",
-      "SEO & Generative Engine Optimization (GEO)",
-      "Branding & Corporate Identity",
-      "CTO as a Service (vCTO)",
-      "Web3, Blockchain & IoT Engineering"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Digital Agency Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Next.js Web Development",
-            "description": "High-performance React and Next.js applications engineered for maximum speed, security, and search engine indexability."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Custom E-commerce Engineering",
-            "description": "Custom headless e-commerce storefronts, Shopify integrations, and highly-optimized checkout systems designed to maximize conversion rates."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Custom API Integrations",
-            "description": "Secure middleware, database synchronization, REST/GraphQL API development, and third-party webhook integrations."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "AI Automations & Voice Agents",
-            "description": "Custom voice and chat agent orchestrations, workflow automation pipelines, and large language model middlewares."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Performance Marketing & PPC",
-            "description": "Data-driven Meta, Google, and LinkedIn ad campaigns with conversions API integration and landing page optimization."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Mobile App Development",
-            "description": "Cross-platform Flutter apps and secure B2B ordering catalogs for iOS and Android devices."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Custom SaaS & ERP Systems",
-            "description": "Bespoke database systems, inventory tracking, team tools, and custom CRM platforms."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "SEO & Generative Engine Optimization (GEO)",
-            "description": "Technical search optimization, schema injection, local visibility, and optimization for AI-powered engines."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Branding & Corporate Identity",
-            "description": "Professional logo system guidelines, color schemes, typographies, and vector collateral styles."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "CTO as a Service (vCTO)",
-            "description": "Executive fractional technical leadership, software audits, infrastructure scaling guides, and tech stack vetting."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Web3, Blockchain & IoT Engineering",
-            "description": "Solidity and Rust smart contract audits, decentralized application portals, and hardware sensor data integrations."
-          }
+        "@type": "WebSite",
+        "@id": "https://pixelfizz.in/#website",
+        "url": "https://pixelfizz.in",
+        "name": "PixelFizz",
+        "publisher": {
+          "@id": "https://pixelfizz.in/#organization"
         }
-      ]
-    }
+      }
+    ]
   }
   </script>
 </head>
@@ -498,7 +396,7 @@
               <span class="work-tag">Vanilla JS</span>
             </div>
             <div class="work-cat">E-Commerce &amp; Retail</div>
-            <div class="work-name">Suthri Wardrobe</div>
+            <h3 class="work-name">Suthri Wardrobe</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -514,7 +412,7 @@
               <span class="work-tag">React</span>
             </div>
             <div class="work-cat">Web Apps &amp; AI Systems</div>
-            <div class="work-name">Vortex Esports</div>
+            <h3 class="work-name">Vortex Esports</h3>
             <span class="work-tech-badge">Supported by custom PHP backend/Flutter companion apps</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -531,7 +429,7 @@
               <span class="work-tag">Chart.js</span>
             </div>
             <div class="work-cat">Web Apps &amp; AI Systems</div>
-            <div class="work-name">CarIQ Dashboard</div>
+            <h3 class="work-name">CarIQ Dashboard</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -547,13 +445,13 @@
               <span class="work-tag">Industrial</span>
             </div>
             <div class="work-cat">B2B &amp; Corporate</div>
-            <div class="work-name">Vardhaman Adhesive</div>
+            <h3 class="work-name">Vardhaman Adhesive</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
 
         <!-- Project 5: Winchester Health Centre -->
-        <a class="work-card wc5 reveal rd1" data-priority="2" data-region="uk" href="https://olivedrab-hare-950327.hostingersite.com" target="_blank" rel="noopener noreferrer" id="work-winchester-health" data-category="local">
+        <a class="work-card wc5 reveal rd1" data-priority="2" data-region="uk" href="work/winchester-health-centre/index.html" target="_blank" rel="noopener noreferrer" id="work-winchester-health" data-category="local">
           <div class="work-bg"></div>
           <div class="work-deco"><div class="work-deco-text">WINCHESTER</div></div>
           <div class="work-overlay">
@@ -563,7 +461,7 @@
               <span class="work-tag">Healthcare UI</span>
             </div>
             <div class="work-cat">Local Services &amp; Medical</div>
-            <div class="work-name">Winchester Health Centre</div>
+            <h3 class="work-name">Winchester Health Centre</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -579,14 +477,14 @@
               <span class="work-tag">Payment Gateway</span>
             </div>
             <div class="work-cat">E-Commerce &amp; Retail</div>
-            <div class="work-name">Sajraah Menswear</div>
+            <h3 class="work-name">Sajraah Menswear</h3>
             <span class="work-tech-badge">Completely custom-built B2C boutique portal with integrated payment gateway, custom inventory control, and secure admin management panel.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
 
         <!-- Project 7: Ojassatva -->
-        <a class="work-card wc7 reveal rd1" data-priority="3" href="https://papayawhip-cassowary-554668.hostingersite.com" target="_blank" rel="noopener noreferrer" id="work-ojassatva" data-category="ecommerce">
+        <a class="work-card wc7 reveal rd1" data-priority="3" href="https://ojasatva.in" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" id="work-ojassatva" data-category="ecommerce">
           <div class="work-bg"></div>
           <div class="work-deco"><div class="work-deco-text">OJASSATVA</div></div>
           <div class="work-overlay">
@@ -596,7 +494,7 @@
               <span class="work-tag">Fast Checkout</span>
             </div>
             <div class="work-cat">E-Commerce &amp; Retail</div>
-            <div class="work-name">Ojassatva Millet Food</div>
+            <h3 class="work-name">Ojassatva Millet Food</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -612,7 +510,7 @@
               <span class="work-tag">HTML5/CSS3</span>
             </div>
             <div class="work-cat">Local Services &amp; Medical</div>
-            <div class="work-name">S10 Event Makers</div>
+            <h3 class="work-name">S10 Event Makers</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -628,7 +526,7 @@
               <span class="work-tag">PDF Generator</span>
             </div>
             <div class="work-cat">Web Apps &amp; AI Systems</div>
-            <div class="work-name">InvoiceForge App</div>
+            <h3 class="work-name">InvoiceForge App</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -644,7 +542,7 @@
               <span class="work-tag">Lead Form</span>
             </div>
             <div class="work-cat">Local Services &amp; Medical</div>
-            <div class="work-name">Veltrix Gym &amp; Wellness</div>
+            <h3 class="work-name">Veltrix Gym &amp; Wellness</h3>
             <span class="work-tech-badge">Supported by custom PHP backend/Flutter companion apps</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -661,7 +559,7 @@
               <span class="work-tag">Next.js</span>
             </div>
             <div class="work-cat">B2B &amp; Corporate</div>
-            <div class="work-name">Furnipart Hardware</div>
+            <h3 class="work-name">Furnipart Hardware</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -677,7 +575,7 @@
               <span class="work-tag">Cart Sync</span>
             </div>
             <div class="work-cat">E-Commerce &amp; Retail</div>
-            <div class="work-name">Veronica Fashion Studio</div>
+            <h3 class="work-name">Veronica Fashion Studio</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -693,7 +591,7 @@
               <span class="work-tag">Custom CSS</span>
             </div>
             <div class="work-cat">Local Services &amp; Medical</div>
-            <div class="work-name">Mital Yoga Studio</div>
+            <h3 class="work-name">Mital Yoga Studio</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -709,7 +607,7 @@
               <span class="work-tag">Quotes Engine</span>
             </div>
             <div class="work-cat">Local Services &amp; Medical</div>
-            <div class="work-name">MedBridge Global</div>
+            <h3 class="work-name">MedBridge Global</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -725,13 +623,13 @@
               <span class="work-tag">HTML5/CSS3</span>
             </div>
             <div class="work-cat">Local Services &amp; Medical</div>
-            <div class="work-name">Shreeji Dental Clinic</div>
+            <h3 class="work-name">Shreeji Dental Clinic</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
 
         <!-- Project 16: Quantus Design Studio -->
-        <a class="work-card wc6 reveal rd1" data-priority="2" href="https://darkorchid-zebra-499165.hostingersite.com" target="_blank" rel="noopener noreferrer" id="work-quantus" data-category="b2b">
+        <a class="work-card wc6 reveal rd1" data-priority="2" href="https://quantusdesignstudio.com" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" id="work-quantus" data-category="b2b">
           <div class="work-bg"></div>
           <div class="work-deco"><div class="work-deco-text">QUANTUS</div></div>
           <div class="work-overlay">
@@ -741,13 +639,13 @@
               <span class="work-tag">Portfolio Grid</span>
             </div>
             <div class="work-cat">B2B &amp; Corporate</div>
-            <div class="work-name">Quantus Design Studio</div>
+            <h3 class="work-name">Quantus Design Studio</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
 
         <!-- Project 17: Kagrecha's Realty -->
-        <a class="work-card wc7 reveal" data-priority="1" href="https://powderblue-termite-524479.hostingersite.com" target="_blank" rel="noopener noreferrer" id="work-kagrecha" data-category="webapps">
+        <a class="work-card wc7 reveal" data-priority="1" href="work/kagrecha-realty/index.html" target="_blank" rel="noopener noreferrer" id="work-kagrecha" data-category="webapps">
           <div class="work-bg"></div>
           <div class="work-deco"><div class="work-deco-text">KAGRECHA</div></div>
           <div class="work-overlay">
@@ -757,7 +655,7 @@
               <span class="work-tag">Next.js</span>
             </div>
             <div class="work-cat">Web Apps &amp; AI Systems</div>
-            <div class="work-name">Kagrecha's Realty</div>
+            <h3 class="work-name">Kagrecha's Realty</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -773,7 +671,7 @@
               <span class="work-tag">Next.js</span>
             </div>
             <div class="work-cat">E-Commerce &amp; Retail</div>
-            <div class="work-name">The Pavizha Store</div>
+            <h3 class="work-name">The Pavizha Store</h3>
             <span class="work-tech-badge">Supported by custom PHP backend/Flutter companion apps</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -792,7 +690,7 @@
               <span class="work-tag">ElevenLabs</span>
             </div>
             <div class="work-cat">Web Apps &amp; AI Systems</div>
-            <div class="work-name">VoiceAi</div>
+            <h3 class="work-name">VoiceAi</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -809,7 +707,7 @@
               <span class="work-tag">TailwindCSS</span>
             </div>
             <div class="work-cat">B2B &amp; Corporate</div>
-            <div class="work-name">Autoyard Marketplace</div>
+            <h3 class="work-name">Autoyard Marketplace</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -826,7 +724,7 @@
               <span class="work-tag">Automated CSV Data</span>
             </div>
             <div class="work-cat">Web Apps &amp; AI Systems</div>
-            <div class="work-name">LeadGenetrator</div>
+            <h3 class="work-name">LeadGenetrator</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -844,7 +742,7 @@
               <span class="work-tag">Play Store</span>
             </div>
             <div class="work-cat">Featured Mobile Attraction</div>
-            <div class="work-name">StreamTwin Streaming Suite</div>
+            <h3 class="work-name">StreamTwin Streaming Suite</h3>
             <span class="work-tech-badge">Live on Google Play Store — Android screen projection and RTMP broadcast engineering.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -863,7 +761,7 @@
               <span class="work-tag">Play Store</span>
             </div>
             <div class="work-cat">Featured Mobile Attraction</div>
-            <div class="work-name">Cadre Management App</div>
+            <h3 class="work-name">Cadre Management App</h3>
             <span class="work-tech-badge">Live on Google Play Store — Community tracking, biometrics, offline storage, and remuneration audits.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -882,7 +780,7 @@
               <span class="work-tag">Deepgram STT</span>
             </div>
             <div class="work-cat">Web Apps &amp; AI Systems</div>
-            <div class="work-name">VoiceAi Automations (St. Paul's Pharmacy)</div>
+            <h3 class="work-name">VoiceAi Automations (St. Paul's Pharmacy)</h3>
             <p style="font-size: 13px; color: var(--fg-muted); margin-top: 8px; line-height: 1.5; font-weight: 400;">
               Engineered a 24/7 automated telephone appointment booking system using custom LLM middleware. Incoming calls are routed via Twilio webhooks to a secure Node.js orchestrator that streams real-time audio to Deepgram. A fine-tuned Claude model processes the text to resolve booking requests, returning dynamic responses via ElevenLabs TTS with under 1.5s latency.
             </p>
@@ -901,7 +799,7 @@
               <span class="work-tag">React + PHP API</span>
             </div>
             <div class="work-cat">B2B &amp; Corporate</div>
-            <div class="work-name">Studio Atlas</div>
+            <h3 class="work-name">Studio Atlas</h3>
             <span class="work-tech-badge">A multi-client business platform for interior design studios — clients, projects, procurement, and GST-compliant invoicing in one place, replacing scattered spreadsheets.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -918,7 +816,7 @@
               <span class="work-tag">Live Price Tracking</span>
             </div>
             <div class="work-cat">B2B &amp; Corporate</div>
-            <div class="work-name">PharmaPriceIQ</div>
+            <h3 class="work-name">PharmaPriceIQ</h3>
             <span class="work-tech-badge">A UK subscription platform that helps independent pharmacies compare supplier prices in real time and stop overpaying on stock — built with Stripe billing and a 14-day free trial baked in.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -935,7 +833,7 @@
               <span class="work-tag">Corporate Platform</span>
             </div>
             <div class="work-cat">B2B &amp; Corporate</div>
-            <div class="work-name">mySetu</div>
+            <h3 class="work-name">mySetu</h3>
             <span class="work-tech-badge">An enterprise-grade EHS&amp;S (Environment, Health, Safety &amp; Sustainability) and risk management platform, built to help large organizations track compliance and reduce workplace risk at scale.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -952,7 +850,7 @@
               <span class="work-tag">Vapi, Gujarat</span>
             </div>
             <div class="work-cat">Local Services &amp; Medical</div>
-            <div class="work-name">Shri L.G. Haria Multipurpose School</div>
+            <h3 class="work-name">Shri L.G. Haria Multipurpose School</h3>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
@@ -968,7 +866,7 @@
               <span class="work-tag">Admin + Blog CMS</span>
             </div>
             <div class="work-cat">E-Commerce &amp; Retail</div>
-            <div class="work-name">Pogo.Market</div>
+            <h3 class="work-name">Pogo.Market</h3>
             <span class="work-tech-badge">A full storefront for game-currency top-ups — fast checkout, order tracking, an admin dashboard, and a built-in blog for SEO, delivered as one complete package.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -986,7 +884,7 @@
               <span class="work-tag">TanStack React</span>
             </div>
             <div class="work-cat">B2B &amp; Corporate</div>
-            <div class="work-name">DM Claims (Loss Assessors)</div>
+            <h3 class="work-name">DM Claims (Loss Assessors)</h3>
             <span class="work-tech-badge">Independent loss assessors managing property damage insurance claims across Ireland and the UK — featuring interactive 1-click damage selection and instant emergency response callback dispatch.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -1004,7 +902,7 @@
               <span class="work-tag">Custom PHP/SQL</span>
             </div>
             <div class="work-cat">E-Commerce &amp; Retail</div>
-            <div class="work-name">Rosetta Diamond Jewellery</div>
+            <h3 class="work-name">Rosetta Diamond Jewellery</h3>
             <span class="work-tech-badge">Certified natural solitaires &amp; 22K gold luxury boutique — streaming video hero, custom category bento grid, real-time reviews engine, and secure checkout.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -1022,7 +920,7 @@
               <span class="work-tag">Growth Systems</span>
             </div>
             <div class="work-cat">B2B &amp; Corporate</div>
-            <div class="work-name">Magnitu Digital</div>
+            <h3 class="work-name">Magnitu Digital</h3>
             <span class="work-tech-badge">Business All-Star accredited European digital performance partner — built with razor-sharp editorial architectural modernism, commercial revenue funnels, and data-driven PPC.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -1040,7 +938,7 @@
               <span class="work-tag">Riverpod</span>
             </div>
             <div class="work-cat">Web Apps &amp; AI Systems</div>
-            <div class="work-name">Tutorly Coaching Suite</div>
+            <h3 class="work-name">Tutorly Coaching Suite</h3>
             <span class="work-tech-badge">Cross-platform tuition and institute management system featuring dedicated interfaces for Parents, Teachers, and Super Admins, real-time fee tracking, and automated PDF reporting.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -1058,7 +956,7 @@
               <span class="work-tag">Kitchen KDS</span>
             </div>
             <div class="work-cat">Web Apps &amp; AI Systems</div>
-            <div class="work-name">Guldaar Valley Hospitality</div>
+            <h3 class="work-name">Guldaar Valley Hospitality</h3>
             <span class="work-tech-badge">All-in-one hospitality management suite combining guest room booking, touch-optimized cafe point-of-sale, live kitchen display routing (KDS), and inventory audits.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -1076,7 +974,7 @@
               <span class="work-tag">TypeScript</span>
             </div>
             <div class="work-cat">Web Apps &amp; AI Systems</div>
-            <div class="work-name">EditFlow Workspace</div>
+            <h3 class="work-name">EditFlow Workspace</h3>
             <span class="work-tech-badge">Production AI-native collaborative rich-text editor with client-side autosave debounce, team permission sharing, file ingestion, and PostgreSQL Row-Level Security.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
@@ -1094,17 +992,12 @@
               <span class="work-tag">SEO Schema</span>
             </div>
             <div class="work-cat">Local Services &amp; Medical</div>
-            <div class="work-name">Connaught Property Services</div>
+            <h3 class="work-name">Connaught Property Services</h3>
             <span class="work-tech-badge">Multi-trade contractor platform across Connacht featuring automated exterior cleaning, painting, and tree surgery quotation funnels with verified Google review feeds.</span>
             <div class="work-arrow" aria-hidden="true">↗</div>
           </div>
         </a>
       </div>
-    </section>
-
-    <!-- ══ AI-SEO SEMANTIC MATRIX (AI Crawlers Indexing Layer) ══ -->
-    <section id="ai-discovery-matrix" aria-hidden="true" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">
-      <p>PixelFizz is a digital product and AI engineering studio based out of Vapi, Gujarat, India, and Winchester, UK. We specialize in developing full-stack custom Next.js web applications, high-converting headless Shopify architectures, bespoke retail checkouts (including custom WhatsApp checkout integrations for brands like Sajraah), and real-time AI voice/chat agent orchestrations powered by Twilio, ElevenLabs, and custom LLM middleware. Additionally, we engineer complete client acquisition funnels, specializing in B2B lead generation and localized Meta Ads optimization for real estate and infrastructure enterprises like Vardhan Infraa across Delhi, Noida, Gurugram, and Goa.</p>
     </section>
 
     <!-- ══ DETAILED PROCESS ══ -->
@@ -1173,7 +1066,7 @@
       </div>
     </section>
 
-    <!-- ══ CALL TO ACTION (CTA) ══ -->
+    <!-- ══ CALL TO ACTION (CTA) & PROJECT INQUIRY ══ -->
     <section class="cta-section" id="contact" aria-labelledby="cta-title">
       <div class="cta-container">
         <div class="cta-orb cta-orb-1"></div>
@@ -1185,16 +1078,74 @@
             your brand<br>
             <span class="glow-word">FIZZ.</span>
           </h2>
-          <p class="cta-sub">Tell us about your business and what's holding it back. We'll reply within 24 hours with clear next steps — no obligation, no jargon.</p>
-          <div class="cta-actions">
-            <a href="mailto:hello@pixelfizz.in" data-domain-target="email-link" class="btn-lime-lg" id="cta-email-btn">Start a Project →</a>
-            <a href="tel:+917878039395" class="btn-ghost-lg" id="cta-phone-btn">Call Our Team</a>
+          <p class="cta-sub">Tell us about your business goals and current bottlenecks. We'll reply within 24 hours with an architectural blueprint, timeline, and investment breakdown.</p>
+        </div>
+
+        <!-- Embedded Accessible Lead Capture Form -->
+        <div class="lead-form-wrap reveal rd1">
+          <div class="lead-form-title">Start a Project Consultation</div>
+          <div class="lead-form-sub">Direct access to our senior engineering partners · Zero obligation · NDA upon request</div>
+
+          <form class="lead-form" id="leadForm">
+            <!-- Bot Trap -->
+            <input type="text" name="website_url" style="display:none;" tabindex="-1" autocomplete="off" />
+            
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="lead-name">Your Name / Organization</label>
+                <input type="text" id="lead-name" name="name" class="form-input" placeholder="e.g. Manish Chawla" required />
+              </div>
+              <div class="form-group">
+                <label for="lead-contact">Work Email or WhatsApp</label>
+                <input type="text" id="lead-contact" name="contact" class="form-input" placeholder="e.g. name@brand.com or +91 / +44" required />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="lead-service">System / Service Needed</label>
+                <select id="lead-service" name="service" class="form-select">
+                  <option value="High-Speed Next.js Web Application">High-Speed Next.js Web App</option>
+                  <option value="Headless E-Commerce Boutique">Headless E-Commerce Boutique</option>
+                  <option value="24/7 AI Voice &amp; Chat Automation">24/7 AI Voice &amp; Chat Automation</option>
+                  <option value="Custom Business Software / ERP">Custom Business Software / ERP</option>
+                  <option value="Cross-Platform Mobile App (Flutter)">Cross-Platform Mobile App (Flutter)</option>
+                  <option value="Performance Marketing &amp; Technical SEO">Performance Marketing &amp; Technical SEO</option>
+                  <option value="Corporate Branding &amp; Visual Identity">Corporate Branding &amp; Visual Identity</option>
+                  <option value="Virtual CTO / System Architecture Audit">Virtual CTO / Technical Audit</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="lead-budget">Estimated Budget Range</label>
+                <select id="lead-budget" name="budget" class="form-select" id="budgetSelect">
+                  <option value="₹1,50,000 – ₹3,00,000">₹1,50,000 – ₹3,00,000 (Boutique Build)</option>
+                  <option value="₹3,00,000 – ₹6,00,000">₹3,00,000 – ₹6,00,000 (Custom Architecture)</option>
+                  <option value="₹6,00,000+">₹6,00,000+ (Full Enterprise / Multi-System)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="lead-message">Brief Project Overview</label>
+              <textarea id="lead-message" name="message" class="form-textarea" placeholder="Tell us what you want to achieve, key features required, and target launch window..."></textarea>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn-submit-lead">Send Project Inquiry →</button>
+              <a href="https://wa.me/917878039395" target="_blank" rel="noopener" class="btn-whatsapp-instant" id="waInstantBtn">Chat on WhatsApp ⚡</a>
+            </div>
+
+            <div class="form-status-msg"></div>
+          </form>
+
+          <div style="margin-top:24px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--fg-muted);">
+            <div>Prefer direct contact? <a href="mailto:hello@pixelfizz.in" data-domain-target="email-link" style="color:#c4ff00;text-decoration:none;">hello@pixelfizz.in</a></div>
+            <div>Direct Line: <a href="tel:+917878039395" style="color:#ffffff;text-decoration:none;">+91 78780 39395</a></div>
           </div>
         </div>
       </div>
     </section>
-    
-  </main>
+</main>
 
   <!-- ══ FOOTER ══ -->
   <footer>
@@ -1221,11 +1172,23 @@
           </ul>
         </div>
         <div>
+          <div class="foot-col-title">Case Studies</div>
+          <ul class="foot-links">
+            <li><a href="work/kagrecha-realty/index.html">Kagrecha's Realty</a></li>
+            <li><a href="work/sajraah-menswear/index.html">Sajraah Menswear</a></li>
+            <li><a href="work/winchester-health-centre/index.html">Winchester Health</a></li>
+            <li><a href="work/dm-claims-ireland/index.html">DM Claims Ireland</a></li>
+            <li><a href="work/guldaar-valley/index.html">Guldaar Valley Resort</a></li>
+            <li><a href="work/voice-ai-telephony/index.html">VoiceAI Telephony</a></li>
+          </ul>
+        </div>
+        <div>
           <div class="foot-col-title">Company</div>
           <ul class="foot-links">
-            <li><a href="#work">Case Studies</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">All Case Studies</a></li>
             <li><a href="#process">Our Process</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Contact &amp; Quotes</a></li>
           </ul>
         </div>
         <div>

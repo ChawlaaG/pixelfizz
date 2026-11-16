@@ -3,56 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Custom E-commerce Boutique Engineering | Pixel Fizz Service</title>
-  <meta name="description" content="Custom headless e-commerce engineering, headless Shopify storefronts, and conversion-optimized e-commerce boutiques. We solve checkout abandonment and inventory synchronization challenges." />
+  <title>Custom E-Commerce Boutiques | PixelFizz</title>
+  <meta name="description" content="Custom headless e-commerce engineering, Shopify storefronts, and conversion-optimized checkout boutiques with sub-second page performance." />
   <link rel="canonical" href="https://pixelfizz.in/services/ecommerce-boutiques/" />
   
-  <!-- Multi-Region Dual-Domain SEO Hreflang Tags (India & UK) -->
+  <!-- Multi-Region Dual-Domain SEO Hreflang Tags -->
   <link rel="alternate" hreflang="en-IN" href="https://pixelfizz.in/services/ecommerce-boutiques/" />
   <link rel="alternate" hreflang="en-GB" href="https://pixelfizz.co.uk/services/ecommerce-boutiques/" />
   <link rel="alternate" hreflang="x-default" href="https://pixelfizz.in/services/ecommerce-boutiques/" />
 
-  <!-- Preconnect to Google Fonts -->
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PixelFizz" />
+  <meta property="og:url" content="https://pixelfizz.in/services/ecommerce-boutiques/" />
+  <meta property="og:title" content="Custom E-Commerce Boutiques | PixelFizz" />
+  <meta property="og:description" content="Custom headless e-commerce engineering, Shopify storefronts, and conversion-optimized checkout boutiques with sub-second page performance." />
+  <meta property="og:image" content="https://pixelfizz.in/assets/og-default.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://pixelfizz.in/services/ecommerce-boutiques/" />
+  <meta name="twitter:title" content="Custom E-Commerce Boutiques | PixelFizz" />
+  <meta name="twitter:description" content="Custom headless e-commerce engineering, Shopify storefronts, and conversion-optimized checkout boutiques with sub-second page performance." />
+  <meta name="twitter:image" content="https://pixelfizz.in/assets/og-default.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" />
+
+  <!-- Preconnect & Asynchronous Google Fonts Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" />
+  </noscript>
   
-  <!-- Premium CSS Sheet (Relative to subfolder) -->
+  <!-- Premium Unified CSS -->
   <link rel="stylesheet" href="../../style.css" />
 
-  <!-- Unified Dual-Domain Engine -->
-  <script src="../../domain-config.js"></script>
-
-  <!-- Structured Data JSON-LD Schema (ProfessionalService) -->
+  <!-- Structured Data JSON-LD Schema (Service + BreadcrumbList + FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "@id": "https://pixelfizz.in/#organization",
-    "name": "Pixel Fizz",
-    "url": "https://pixelfizz.in",
-    "logo": "https://pixelfizz.in/assets/logo.png",
-    "image": "https://pixelfizz.in/assets/hero.jpg",
-    "description": "Premium full-stack web development agency specializing in Next.js development, custom e-commerce engineering, and API integrations.",
-    "telephone": "+917878039395",
-    "priceRange": "$$$",
-    "address": [
+    "@graph": [
       {
-        "@type": "PostalAddress",
-        "addressLocality": "Vapi",
-        "addressRegion": "Gujarat",
-        "addressCountry": "IN"
+        "@type": "Service",
+        "@id": "https://pixelfizz.in/services/ecommerce-boutiques/#service",
+        "name": "Custom E-Commerce Boutique Engineering",
+        "description": "Custom headless e-commerce engineering, Shopify storefronts, and conversion-optimized checkout boutiques with sub-second page performance.",
+        "provider": {
+          "@type": "Organization",
+          "name": "PixelFizz",
+          "url": "https://pixelfizz.in",
+          "logo": "https://pixelfizz.in/assets/logo.png"
+        },
+        "areaServed": ["IN", "GB"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Custom E-Commerce Boutique Engineering",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Custom E-Commerce Boutique Engineering"
+              }
+            }
+          ]
+        }
       },
       {
-        "@type": "PostalAddress",
-        "addressLocality": "Winchester",
-        "addressRegion": "Hampshire",
-        "addressCountry": "GB"
+        "@type": "BreadcrumbList",
+        "@id": "https://pixelfizz.in/services/ecommerce-boutiques/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://pixelfizz.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://pixelfizz.in/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Custom E-Commerce Boutique Engineering",
+            "item": "https://pixelfizz.in/services/ecommerce-boutiques/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://pixelfizz.in/services/ecommerce-boutiques/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why build a headless or custom boutique instead of standard Shopify?",
+            "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Standard Shopify themes carry heavy third-party app scripts that slow down mobile checkouts. Custom architectures load in under 1 second, increasing checkout completion rates by 30-40%."
+            }
+},
+          {
+            "@type": "Question",
+            "name": "Do you integrate local payment gateways like Razorpay, Stripe, and COD?",
+            "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. We integrate Razorpay, Stripe, Apple Pay, Google Pay, and automated Cash on Delivery (COD) verification workflows via SMS/WhatsApp to reduce return-to-origin (RTO) rates."
+            }
+},
+          {
+            "@type": "Question",
+            "name": "Can you migrate our existing store without losing SEO rankings?",
+            "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. We execute strict 1-to-1 URL redirects, preserve canonical structures, and carry over existing customer and order histories seamlessly."
+            }
+},
+          {
+            "@type": "Question",
+            "name": "How do you handle inventory synchronization?",
+            "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We wire real-time stock webhooks directly to your warehouse ERP, POS, or inventory spreadsheets, ensuring zero overselling."
+            }
+}
+        ]
       }
-    ],
-    "sameAs": [
-      "https://instagram.com/ChawlaaG",
-      "https://www.linkedin.com/in/chawlaag/",
-      "https://twitter.com/ChalwaaG"
     ]
   }
   </script>
@@ -76,7 +157,7 @@
         </ul>
       </nav>
       <div class="nav-actions">
-        <a href="../../index.html#contact" class="nav-cta" id="nav-cta-btn">Let's Talk →</a>
+        <a href="../../index.html#contact" class="nav-cta" id="nav-cta-btn">Start a Project →</a>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -89,65 +170,195 @@
   <main>
     <section class="service-detail">
       <div class="svc-detail-header reveal">
-        <span class="section-tag">Core Development Service</span>
-        <h1 class="svc-detail-title">Custom E-commerce Boutique Engineering</h1>
-        <p class="svc-detail-hero-desc">
-          We construct headless e-commerce architectures, custom Shopify storefronts, and optimized checkout funnels that load instantly and turn casual traffic into loyal, repeating buyers.
-        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumbs-sep">/</span>
+          <a href="../../index.html#services">Services</a>
+          <span class="breadcrumbs-sep">/</span>
+          <span class="breadcrumbs-current">ecommerce-boutiques</span>
+        </nav>
+
+        <span class="section-tag">Engineering Service</span>
+        <h1 class="svc-detail-title">Custom E-Commerce Boutique Engineering</h1>
+        <p class="svc-detail-hero-desc">Custom headless e-commerce engineering, Shopify storefronts, and conversion-optimized checkout boutiques with sub-second page performance.</p>
       </div>
 
       <div class="svc-detail-body reveal rd1">
         <div class="svc-content">
           <h2>What Problems We Solve for Clients</h2>
           <p>
-            Standard e-commerce store templates are bloated with unnecessary JavaScript, slow trackers, and heavy themes. This combination slows load times down to 4-7 seconds, causing customers to abandon their shopping carts. Furthermore, out-of-the-box templates rarely reflect your unique brand identity, making it difficult to stand out in crowded online spaces.
+            Slow websites, fragmented third-party software, and high customer drop-off rates directly erode commercial revenue. Most businesses struggle with bloated CMS themes that look fine on desktop but drag down mobile speed scores and leave search engines unable to index content efficiently.
           </p>
           <p>
-            We solve these friction points by decoupling the visual frontend from the backend database (headless commerce). By keeping your backend on Shopify, WooCommerce, or BigCommerce, and building a custom frontend on Next.js or React, your page loads become instantaneous. This architecture reduces cart drop-off rates and maximizes your average order value (AOV).
+            PixelFizz eliminates these bottlenecks by engineering production architectures with zero-bloat code, sub-second response times, and hardened security. We align modern engineering with clear commercial metrics: higher checkout conversions, lower cost per lead, and complete system reliability.
           </p>
 
-          <h2>Our Technical Capabilities</h2>
+          <h2>Our Technical Capabilities & Standards</h2>
           <ul>
-            <li><strong>Headless Storefronts:</strong> Fast-rendering user experiences using Shopify Hydrogen or Next.js Commerce connected to your Shopify admin via the Storefront API.</li>
-            <li><strong>Optimized Checkout Funnels:</strong> Clean, single-page checkouts with secure payment gateway integrations (Stripe, Razorpay, Apple Pay, PayPal).</li>
-            <li><strong>Real-time Inventory Integration:</strong> Programmatic synchronization between your e-commerce platform, warehouses, ERPs, and marketing feeds.</li>
-            <li><strong>Tailored Cart Customizations:</strong> Custom cart discount scripts, gift-with-purchase logic, and recommendation engines to boost customer AOV.</li>
+            <li><strong>Zero-Bloat Full-Stack Architecture:</strong> Engineered with modern frameworks to minimize client-side bundle sizes and achieve 95+ Core Web Vitals.</li>
+            <li><strong>Automated Lead & Transaction Pipelines:</strong> Seamless integrations with payment gateways, WhatsApp business endpoints, and CRM systems.</li>
+            <li><strong>Search Engine & GEO Optimization:</strong> Automated JSON-LD schema, clean semantic hierarchy, and programmatic sitemaps for Google and generative AI engines.</li>
+            <li><strong>High-Availability Edge Deployment:</strong> Configured for high traffic surges with robust caching headers, GZIP/Brotli compression, and security shielding.</li>
           </ul>
 
-          <h2>Typical Project Scope</h2>
-          <p>
-            We review your current sales metrics, identify friction points in your buying flow, and create a design concept in Figma. Following your approval, we write clean, custom HTML/CSS modules, set up the secure API links, connect payment providers, and configure tracking analytics before launching.
-          </p>
+          <!-- Related Case Studies Showcase -->
+          <h2 style="margin-top:36px;">Featured Case Studies in This Category</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:16px;margin:20px 0 32px;">
+            
+          <div style="background:hsla(240,10%,7%,0.8);border:1px solid var(--glass-border);border-radius:14px;padding:20px;">
+            <div style="font-family:var(--font-display);font-size:16px;font-weight:700;color:#ffffff;margin-bottom:6px;">
+              <a href="../../work/sajraah-menswear/index.html" style="color:#ffffff;text-decoration:none;">Sajraah Menswear Store →</a>
+            </div>
+            <p style="font-size:13px;color:var(--fg-muted);line-height:1.6;margin-bottom:12px;">Custom PHP/MySQL D2C menswear boutique with Razorpay, COD confirmation, and 42% lower cart abandonment.</p>
+            <a href="../../work/sajraah-menswear/index.html" style="font-size:12px;font-weight:700;color:var(--lime);text-decoration:none;">View Case Study ↗</a>
+          </div>
+        
+
+          <div style="background:hsla(240,10%,7%,0.8);border:1px solid var(--glass-border);border-radius:14px;padding:20px;">
+            <div style="font-family:var(--font-display);font-size:16px;font-weight:700;color:#ffffff;margin-bottom:6px;">
+              <a href="https://thepavizha.com" style="color:#ffffff;text-decoration:none;">The Pavizha Store →</a>
+            </div>
+            <p style="font-size:13px;color:var(--fg-muted);line-height:1.6;margin-bottom:12px;">Handcrafted artisanal jewellery e-commerce boutique with fast mobile checkout.</p>
+            <a href="https://thepavizha.com" style="font-size:12px;font-weight:700;color:var(--lime);text-decoration:none;">View Case Study ↗</a>
+          </div>
+        
+          </div>
+
+          <!-- FAQ Accordion Section -->
+          <div class="faq-section">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <p class="faq-sub">Common questions founders and technical leads ask before starting a project with us.</p>
+            <div class="faq-accordion">
+              
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Why build a headless or custom boutique instead of standard Shopify?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Standard Shopify themes carry heavy third-party app scripts that slow down mobile checkouts. Custom architectures load in under 1 second, increasing checkout completion rates by 30-40%.</p>
+            </div>
+          </div>
+        
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Do you integrate local payment gateways like Razorpay, Stripe, and COD?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. We integrate Razorpay, Stripe, Apple Pay, Google Pay, and automated Cash on Delivery (COD) verification workflows via SMS/WhatsApp to reduce return-to-origin (RTO) rates.</p>
+            </div>
+          </div>
+        
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Can you migrate our existing store without losing SEO rankings?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. We execute strict 1-to-1 URL redirects, preserve canonical structures, and carry over existing customer and order histories seamlessly.</p>
+            </div>
+          </div>
+        
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>How do you handle inventory synchronization?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We wire real-time stock webhooks directly to your warehouse ERP, POS, or inventory spreadsheets, ensuring zero overselling.</p>
+            </div>
+          </div>
+        
+            </div>
+          </div>
         </div>
 
         <aside class="svc-sidebar">
           <div class="sidebar-box">
-            <h3>Platforms &amp; APIs</h3>
+            <h3>Engineering Presets</h3>
             <ul>
-              <li>Shopify Storefront API</li>
-              <li>WooCommerce REST API</li>
-              <li>Stripe / Razorpay</li>
-              <li>Next.js / React</li>
-              <li>Hydrogen &amp; Oxygen</li>
-              <li>GraphQL / Webhooks</li>
+              <li>Next.js 14 / 15 App Router</li>
+              <li>React 19 & TypeScript</li>
+              <li>PostgreSQL & Supabase</li>
+              <li>Razorpay & Stripe APIs</li>
+              <li>Cloud VPS / LiteSpeed / Edge</li>
+              <li>TailwindCSS / Vanilla CSS</li>
             </ul>
           </div>
           
           <div class="sidebar-box">
             <h3>Key Benefits</h3>
             <ul>
-              <li>Instant 1-second load times</li>
-              <li>Lower cart abandonment</li>
-              <li>Custom branded checkouts</li>
-              <li>Flexible design control</li>
+              <li>Sub-second loading times (95+ score)</li>
+              <li>Zero recurring CMS app bloat</li>
+              <li>Direct WhatsApp / CRM lead dispatch</li>
+              <li>100% code ownership & source control</li>
             </ul>
+          </div>
+
+          <div class="sidebar-box" style="background:rgba(196,255,0,0.06);border-color:rgba(196,255,0,0.3);">
+            <h3 style="color:var(--lime);">Start Your Consultation</h3>
+            <p style="font-size:13px;color:var(--fg-muted);margin-bottom:14px;">Speak directly with our lead engineer about your system architecture and timeline.</p>
+            <a href="#contact-inquiry" class="btn-lime" style="width:100%;text-align:center;font-size:13px;padding:10px 16px;">Request Architectural Proposal →</a>
           </div>
         </aside>
       </div>
-      
-      <div style="text-align: center; margin-top: 40px;" class="reveal rd2">
-        <a href="../../index.html#contact" class="btn-lime">Discuss Your E-commerce Project →</a>
-      </div>
+
+      <!-- Embedded High-Converting Lead Inquiry Form -->
+      <section class="cta-section" id="contact-inquiry" style="padding-top:40px;">
+        <div class="lead-form-wrap">
+          <div class="lead-form-title">Consult on Your Custom E-Commerce Boutique Engineering</div>
+          <div class="lead-form-sub">Tell us about your project parameters. Our lead engineer will reply within 24 hours with an architectural blueprint and investment breakdown.</div>
+
+          <form class="lead-form">
+            <input type="text" name="website_url" style="display:none;" tabindex="-1" autocomplete="off" />
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="name">Your Name / Company</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required />
+              </div>
+              <div class="form-group">
+                <label for="contact">Work Email or WhatsApp</label>
+                <input type="text" id="contact" name="contact" class="form-input" placeholder="e.g. alex@brand.com or +91 / +44" required />
+              </div>
+            </div>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service" class="form-select">
+                  <option value="Custom E-Commerce Boutique Engineering">Custom E-Commerce Boutique Engineering</option>
+                  <option value="Next.js Web Development">Next.js Web Development</option>
+                  <option value="Custom E-Commerce Boutique">Custom E-Commerce Boutique</option>
+                  <option value="Autonomous AI Voice & Workflow Automation">Autonomous AI Voice & Automation</option>
+                  <option value="Custom Business SaaS / ERP">Custom Business SaaS / ERP</option>
+                  <option value="Mobile App Development">Mobile App Development</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="budget">Target Investment Tier</label>
+                <select id="budget" name="budget" class="form-select">
+                  <option value="Standard Architecture">Boutique Architecture</option>
+                  <option value="Custom Enterprise">Custom Enterprise Build</option>
+                  <option value="Full Multi-System">Full Multi-System Deployment</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Scope & Requirements</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Briefly describe what you need built and your target launch date..."></textarea>
+            </div>
+            <div class="form-submit-row">
+              <button type="submit" class="btn-submit-lead">Submit Project Spec →</button>
+              <a href="https://wa.me/917878039395" target="_blank" rel="noopener" class="btn-whatsapp-instant">Or Chat on WhatsApp ⚡</a>
+            </div>
+            <div class="form-status-msg"></div>
+          </form>
+        </div>
+      </section>
     </section>
   </main>
 
@@ -157,24 +368,27 @@
       <div class="foot-top">
         <div>
           <div class="foot-logo">Pixel<em>Fizz</em></div>
-          <p class="foot-tagline">Premium full-stack engineering agency building high-performance web systems and digital campaigns that drive conversions.</p>
+          <p class="foot-tagline">We build fast websites, online stores, and AI-powered tools that help brands sell more and grow faster.</p>
         </div>
         <div>
           <div class="foot-col-title">Services</div>
           <ul class="foot-links">
-            <li><a href="../nextjs-development/index.html">Next.js Web Apps</a></li>
-            <li><a href="#">E-commerce Stores</a></li>
-            <li><a href="../custom-api-integrations/index.html">Custom API &amp; Integrations</a></li>
-            <li><a href="../../index.html#services">Performance Marketing</a></li>
-            <li><a href="../../index.html#services">AI Chatbots &amp; Agents</a></li>
+            <li><a href="../nextjs-development/index.html">High-Speed Websites</a></li>
+            <li><a href="../ecommerce-boutiques/index.html">Online Stores That Sell</a></li>
+            <li><a href="../custom-api-integrations/index.html">Connected Systems</a></li>
+            <li><a href="../ai-automations-agents/index.html">24/7 AI Assistants</a></li>
+            <li><a href="../mobile-apps/index.html">Custom Mobile Apps</a></li>
           </ul>
         </div>
         <div>
-          <div class="foot-col-title">Company</div>
+          <div class="foot-col-title">Case Studies</div>
           <ul class="foot-links">
-            <li><a href="../../index.html#work">Case Studies</a></li>
-            <li><a href="../../index.html#process">Our Process</a></li>
-            <li><a href="../../index.html#contact">Contact</a></li>
+            <li><a href="../../work/kagrecha-realty/index.html">Kagrecha's Realty</a></li>
+            <li><a href="../../work/sajraah-menswear/index.html">Sajraah Menswear</a></li>
+            <li><a href="../../work/winchester-health-centre/index.html">Winchester Health</a></li>
+            <li><a href="../../work/dm-claims-ireland/index.html">DM Claims</a></li>
+            <li><a href="../../work/guldaar-valley/index.html">Guldaar Valley</a></li>
+            <li><a href="../../work/voice-ai-telephony/index.html">VoiceAI Telephony</a></li>
           </ul>
         </div>
         <div>
@@ -191,16 +405,15 @@
       <div class="foot-bottom">
         <div class="foot-copy">© 2026 PixelFizz. All rights reserved. Registered Professional Service.</div>
         <div class="foot-socials">
-          <a href="https://instagram.com/ChawlaaG" target="_blank" rel="noopener" title="Instagram" id="social-ig">ig</a>
-          <a href="https://www.linkedin.com/in/chawlaag/" target="_blank" rel="noopener" title="LinkedIn" id="social-in">in</a>
-          <a href="https://twitter.com/ChalwaaG" target="_blank" rel="noopener" title="Twitter / X" id="social-x">𝕏</a>
-          <a href="https://wa.me/917878039395" target="_blank" rel="noopener" title="WhatsApp" id="social-wa">wa</a>
+          <a href="https://instagram.com/ChawlaaG" target="_blank" rel="noopener" title="Instagram">ig</a>
+          <a href="https://www.linkedin.com/in/chawlaag/" target="_blank" rel="noopener" title="LinkedIn">in</a>
+          <a href="https://twitter.com/ChalwaaG" target="_blank" rel="noopener" title="Twitter / X">𝕏</a>
+          <a href="https://wa.me/917878039395" target="_blank" rel="noopener" title="WhatsApp">wa</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- ══ INTERACTIVE ELEMENTS LOGIC ══ -->
   <script src="../../main.js" defer></script>
 </body>
 </html>
